@@ -35,7 +35,7 @@ class AnagramNumber
 					ld2=temp2%10;//3
 					if (ld1!=ld2)
 					{
-						temp12/=10;
+						temp2/=10;
 						
 					}
 					else{
