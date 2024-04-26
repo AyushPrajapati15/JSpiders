@@ -1,0 +1,29 @@
+div{
+    float: left;
+}
+h1{
+    float: left;
+    font-size: 160px;
+}
+.G,.g{
+    color: blue;
+}
+.o,.e{
+    color: orangered;
+}
+#o{
+    color: orange;
+}
+#l{
+    color: green;
+}
+marquee{
+    width: 120px;
+    float: left;
+    /* background-color: red; */
+}
+#start{
+    /* background-color: red; */
+    width: 600px;
+    height: 100px;
+}
