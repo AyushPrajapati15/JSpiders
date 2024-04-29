@@ -1,0 +1,57 @@
+/* universal Selector */
+
+/* *{
+    background-color: salmon;
+    color: darkblue;
+} */
+
+
+/* TagNAme Selector */
+/* 
+h1{
+    background-color: skyblue;
+    color: darkblue;
+}
+p{
+    background-color: salmon;
+    color: darkslateblue;
+}
+h2{
+    background-color: green;
+    color: lawngreen;
+} */
+
+/* ID SELECTOR */
+
+/* #heading1{
+    color: red;
+    background-color: aqua;
+}
+#heading2{
+    color: red;
+    background-color: green;
+} */
+
+/* CLASS SELECTOR */
+.bg-red{
+    background-color: red;
+}
+.bg-blue{
+    background-color: blue;
+}
+
+.text-red{
+    color: red;
+}
+.text-blue{
+    color: blue;
+}
+.width-small{
+    width: 200px;
+}
+.width-med{
+    width: 400px;
+}
+.width-large{
+    width: 800px;
+}
