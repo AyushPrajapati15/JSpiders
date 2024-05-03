@@ -1,0 +1,106 @@
+#Grandfather{
+    background-color: coral;
+    height: 500px;
+    width: 100%;
+}
+#Father,#Uncle{
+    background-color: teal;
+    width: 50%;
+    height: 80%;
+    float: left;
+}
+#Uncle{
+    background-color: burlywood;
+}
+#You,#Sibling1,#Sibling2{
+    background-color: yellow;
+    width: 33%;
+    height: 80%;
+    float: left;
+}
+#Sibling1{
+    background-color: orangered;
+}
+#Sibling2{
+    background-color: aqua;
+}
+#Cousin1,#Cousin2{
+    background-color: yellowgreen;
+    height:80%;
+    width: 50%;
+    float: left;
+}
+#Cousin2{
+    background-color: cornflowerblue;
+}
+
+
+
+
+
+
+
+
+
+/* Combinator Selector */
+
+#Grandfather>#Father{
+    background-color: chartreuse;
+}
+#Grandfather>#Father>#You{
+    background-color: chartreuse;
+}
+#Grandfather>#Father>#You,#Sibling1{
+    background-color: chartreuse;
+}
+#Father>#You,#Sibling1{
+    background-color: chartreuse;
+}
+
+
+#Grandfather>#Uncle{
+    background-color: white;
+}
+#Grandfather>#Uncle>#Cousin1{
+    background-color: white;
+}
+#Grandfather>#Uncle>#Cousin1,#Cousin2{
+    background-color: white;
+}
+#Uncle>#Cousin1,#Cousin2{
+    background-color: white;
+}
+
+
+/* Descendant Selector( ) */
+
+#Grandfather #Father{
+    background-color:rosybrown ;
+}
+#Grandfather #Father #You{
+    background-color:brown ;
+}
+#Father #You{
+    background-color:rosybrown ;
+}
+
+#Grandfather #Uncle{
+    background-color: yellow;
+}
+#Grandfather #Uncle #Cousin1{
+    background-color: purple;
+}
+#Uncle #Cousin2{
+    background-color: red;
+}
+
+/* Adjacent Sibling Selector(+) */
+#You+#Sibling1{
+    background-color: royalblue;
+}
+
+
+/* General Sibling Selector(~) */
+#You~#Sibling1~#Sibling2{
+    background-color: blueviolet;
+}
