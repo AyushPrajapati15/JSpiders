@@ -1,0 +1,61 @@
+body{
+    /* background-color: blue; */
+}
+
+/* RGB COLOR */
+/* input{
+    background-color: transparent;
+    background-color: rgb(255, 150, 150);
+} */
+
+/* RGBA COLOR */
+/* div{
+    width: 220px;
+    height: 220px;
+    background-color: rgba(243, 139, 4, 0.966);
+} */
+
+/* HEXADECIMAL VALUE BACKGROUD COLOR */
+/* .a{
+    width: 220px;
+    height: 220px;
+    background-color: #abcdef;
+} */
+
+/* HEXADECIMAL WITH OPACITY */
+/* #b{
+    background-color: #91d658ef;
+} */
+
+/* BACKGROUND IMAGE PROPERTY */
+
+body{
+    /* background-image: url(/family/family.jpg); */
+    /* background-size: 100%; */
+    /* background-size: 10%;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y; */
+}
+
+/* BACKGROUND POSITION */
+/* body{
+    background-image: url(/family/family.jpg);
+    width: 100%;
+    height: 600px;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    /* background-position:left ; */
+    /* background-position:right; */
+    /* background-position:top ; */
+    /* background-position:bottom ; */
+    /* background-position:left ; */
+    /* background-position: 100px 200px; */
+/* } */
+
+/* BACKGROUND ATTACHMENT */
+body{
+    background-image: url(/Asset/Image/car.jpg);
+    background-repeat: repeat;
+    background-size: 100%,100%;
+    background-attachment: scroll;
+}
