@@ -1,0 +1,49 @@
+/* LINEAR GRADIENT */
+
+.b{
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(45deg,orange,white,green);
+    background-image: linear-gradient(45deg,violet,indigo,blue,green,yellow,orange,red);
+    background-repeat: no-repeat;
+    background-size: 100% 900px;
+}
+
+#a{
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient(45deg,black,transparent,purple),url(/Asset/Image/john.jpeg);
+    background-image: linear-gradient(45deg,rgb(0, 0, 0),transparent,rgb(255, 3, 255)),linear-gradient(135deg,rgb(12, 236, 12),transparent,rgb(255, 166, 0));
+    background-size: 100% 100%;
+}
+
+/* RADIAL GRADIENT */
+#c{
+    width: 100%;
+    height: 900px;
+    background-image: radial-gradient(white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white);
+}
+
+/* COMBINATION OF LINEAR+RADIAL */
+
+#d{
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(45deg,red,transparent,transparent,transparent,blue),radial-gradient(transparent,transparent,green),url(/Asset/Image/john.jpeg);
+    background-size: 100% 100%;
+}
+
+
+/* CIRCLE& ELLIPSE  */
+#e{
+    width: 100%;
+    height: 400px;
+    background-image: radial-gradient(ellipse,red,black,red,black,red,black,red,black,red,black,red,black,red,black);
+}
+
+#f{
+    width: 450px;
+    height: 400px;
+    background-image: radial-gradient(circle at 50%,transparent,red 70%,black 20%),url(/Asset/Image/earth.png);
+    background-size: 100%,100%;
+}
