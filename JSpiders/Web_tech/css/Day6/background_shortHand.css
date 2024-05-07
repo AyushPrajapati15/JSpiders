@@ -1,0 +1,31 @@
+/* body{
+    background: red;
+    background: url(/Asset/Image/earth.png);
+    background: linear-gradient(black ,yellow);
+    background: radial-gradient(yellow ,black);
+    background: conic-gradient(yellow,green);
+}
+ */
+
+#border{
+    border: 10px groove greenyellow;
+ }
+ #mixedborder{
+    border-left: 10px double red;
+    border-top: 50px groove lightblue;
+    border-right: 20px dashed brown;
+    border-bottom: 50px dotted coral;
+ }
+ 
+ #high{
+    border-left:5px solid green;
+    border-width: 400px;
+ }
+ #mid{
+    border-left:5px solid orange;
+    border-width: 250px;
+ }
+ #low{
+    border-left:5px solid red;
+    border-width: 100px;
+ }
