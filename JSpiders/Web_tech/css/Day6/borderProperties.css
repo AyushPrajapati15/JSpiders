@@ -1,0 +1,36 @@
+*{
+    border-width: 10px;
+
+}
+img{
+    width: 200px;
+}
+#solid{
+    
+    border-style: solid;
+}
+#double{
+    border-style: double;
+}
+#dashed{
+    border-style: dashed;
+}
+#dotted{
+    border-style: dotted;
+}
+#groove{
+    border-style: groove;
+    border-color: yellow;
+}
+#ridge{
+    border-style: ridge;
+    border-color: yellow;
+}
+#inset{
+    border-style: inset;
+    border-color: lightblue;
+}
+#outset{
+    border-style: outset;
+    border-color: lightblue;
+}
