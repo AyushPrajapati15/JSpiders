@@ -1,0 +1,8 @@
+body{
+    width: 100%;
+    height: 900px;
+    background-image: url(/Asset/Image/sun.png),conic-gradient(red ,orange,red ,orange,red ,orange,red ,orange,red ,orange,red ,orange);
+    background-repeat: no-repeat;
+    background-size: 100px,100% 900px;
+    background-position: center;
+}
