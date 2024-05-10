@@ -1,0 +1,18 @@
+h1{
+    border: 5px solid grey;
+    /* padding: 100px; */
+    /* padding-top: 50px;
+    padding-right: 100px;
+    padding-bottom: 80px;
+    padding-left: 100px; */
+    padding: 120px;
+}
+h2{
+    border: 5px solid coral;
+    /* margin-top: 50px;
+    margin-right: 100px;
+    margin-bottom: 200px;
+    margin-left: 200px; */
+    margin: 150px;
+    /* margin: 400px 0px 0px 1000px ; */
+}
