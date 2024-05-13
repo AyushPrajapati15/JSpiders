@@ -1,0 +1,49 @@
+*{
+    font-size: 40px;
+}
+a:link{
+    color: red;
+    background-color: yellow;
+}
+a:visited{
+    color:blue ;
+    background-color: green;
+}
+a:hover{
+    color: brown;
+    background-color: chartreuse;
+}
+a:active{
+    color: pink;
+    background-color: aqua;
+}
+#a{
+    width: 40%;
+    height: 300px;
+    background-color: coral;
+    border-radius: 50px;
+    background-image: url(/Asset/Image/earth.png);
+}
+#a:hover{
+    background-color: teal;
+    border-radius: 100px 100% 120px 80px;
+    background-image: url(/Asset/Image/sun.png);
+}
+input:checked{
+    width: 20px;
+    height: 100px;
+    /* transform: scale(2); */
+}
+input{
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background-color: green;
+    border-bottom: 2px solid yellow;
+
+}
+
+input:disabled{
+    background-color: red;
+    border-bottom: darkred 2px solid;
+}
