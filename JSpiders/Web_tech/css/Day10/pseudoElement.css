@@ -1,0 +1,82 @@
+input{
+    background-color: teal;
+    border: 5px solid red;
+    color: red;
+    outline-color: lawngreen;
+}
+input::placeholder{
+    color: coral;
+}
+
+h1::first-letter{
+    font-size: 70px;
+    color:red;
+    font-style: italic;
+
+}
+p::first-line{
+    color: blue;
+    font-size: 20px;
+}
+h2::before{
+    content: "This is before ";
+    color: red;
+
+}
+h2::after{
+    content: " This is after";
+    color: blue;
+    font-size: 30px;
+
+}
+h2::first-letter{
+    font-size: 50px;
+}
+p::selection{
+    color: teal;
+    background-color: coral;
+}
+
+li::marker{
+    /* color: red; */
+    content: "╠  ";
+}
+
+
+/* SCROLLBAR */
+body{
+        height: 5000px;
+        background-image: linear-gradient(45deg,red,yellow,violet);
+}
+body::-webkit-scrollbar{
+    /* background-color: red; */
+    background-image: linear-gradient(rgb(250, 75, 11) ,rgb(6, 109, 109));
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb{
+    /* background-color: rgb(34, 52, 70); */
+    border-radius: 100px 100px 100px 100px;
+    background-image: url(/Asset/Image/sun.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+
+/* RANGEBAR */
+input::-webkit-slider-runnable-track{
+    -webkit-appearance: none;
+    background-color: red;
+    border-radius: 20px;
+    height: 10px;
+}
+input{
+    -webkit-appearance: none;
+    border-radius: 150px;
+}
+input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 20px;
+    height: 100%;
+    background-color: blue;
+    border-radius: 100%;
+
+}
