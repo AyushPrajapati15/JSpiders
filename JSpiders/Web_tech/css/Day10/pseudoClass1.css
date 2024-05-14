@@ -1,0 +1,70 @@
+h1{
+    color:red;
+}
+h2:first-child{
+    color: blue;
+}
+p:last-child{
+    color: violet;
+}
+
+
+
+/* ***************************** */
+#input1{
+    background-color: grey;
+    color: yellow;
+    border: 2px solid red;
+    border-radius: 20px;
+    width: 200px;
+    height: 20px;
+    outline: 2px solid yellow;
+}
+#input1:focus{
+    background-color: orangered;
+    border: 5px solid red;
+    outline: blue;
+    width: 250px;
+    height: 30px;
+    color: white;
+
+}
+
+/* below will not give the proper effect as it is not in order */
+
+/* input:disabled{
+    background-color: red;
+    border-radius: 15px;
+}
+input:required{
+    background-color: green;
+    border-radius: 15px;
+}
+input:read-only{
+    background-color: blue;
+    border-radius: 15px;
+} */
+
+
+/*  it will give the proper order as it is in order*/
+
+input:required{
+    background-color: green;
+    border-radius: 15px;
+}
+input:read-only{
+    background-color: blue;
+    border-radius: 15px;
+}
+input:disabled{
+    background-color: red;
+    border-radius: 15px;
+}
+
+
+#email:valid{
+    background-color: green;
+}
+#email:invalid{
+    background-color: red;
+}
