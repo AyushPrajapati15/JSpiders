@@ -1,0 +1,26 @@
+#d1{
+    width: 40%;
+    height: 300px;
+    background-color: teal;
+    background-repeat: no-repeat;
+    transition-property: border-radius;
+    transition-duration: 0.5s;
+}
+#d1:hover{
+    border-radius: 100%;
+    background-color: coral;
+}
+#d2{
+    width: 40%;
+    height: 300px;
+    /* background-color: teal; */
+    background-image: url(/Asset/Image/spider.jpeg);
+    background-repeat: no-repeat;
+    transition-property: border-radius;
+    transition-duration: 0.5s;
+}
+#d2:hover{
+    border-radius: 100%;
+    /* background-color: coral; */
+    background-image: url(/Asset/Image/bat.jpeg);
+}
