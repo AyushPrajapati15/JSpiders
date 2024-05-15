@@ -1,0 +1,48 @@
+h1{
+    border: double 10px skyblue;
+    width: 300px;
+    height: 100px;
+    /* //OUTLINE */
+    outline: groove 10px blue;
+    /* OUTLINE OFFSET IS USED TO GIVE THE SPACE BETWEEN BORDER AND OUTLINE */
+    outline-offset: 10px;
+    border-radius: 10px;
+}
+
+
+/* BUTTERFLY */
+.upleft{
+    width: 150px;
+    height: 150px;
+    border-radius:11% 89% 0% 100% / 24% 68% 32% 76% ;
+    background-color: red;
+
+}
+.upright{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+
+}
+#shape{
+    width: 100px;
+    height: 400px;
+    background-color: purple;
+    float: left;
+    border-radius: 100% 100%;
+}
+.downleft{
+    width: 150px;
+    height: 150px;
+    background-color: brown;
+
+}
+.downright{
+    width: 150px;
+    height: 150px;
+    background-color: green;
+
+}
+.out{
+    float: left;
+}
