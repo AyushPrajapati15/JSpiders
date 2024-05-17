@@ -1,0 +1,34 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+img{
+    width: 150px;
+    transition: all 2s;
+    /* transition-delay: 3s; */
+
+}
+#container{
+    background-color: skyblue;
+
+}
+#container:hover>img{
+    margin-left: 93%;
+}
+
+#a{
+    transition-timing-function: ease;
+}
+#b{
+    transition-timing-function: ease-in;
+}
+#c{
+    transition-timing-function: ease-out;
+}
+#d{
+    transition-timing-function: ease-in-out;
+}
+#e{
+    /* transition-timing-function: step-end; */
+    transition-timing-function: linear;
+}
