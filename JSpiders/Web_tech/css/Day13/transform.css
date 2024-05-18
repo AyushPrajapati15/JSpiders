@@ -1,0 +1,11 @@
+img{
+    width: 250px;
+    transition: all 1s;
+}
+img:hover{
+    /* transform: rotate(90deg); */
+    /* transform: rotatex(90deg); */
+    /* transform: rotatey(90deg); */
+    /* transform: rotatex(45deg) rotateY(45deg); */
+    transform: rotatex(455454deg);
+}
