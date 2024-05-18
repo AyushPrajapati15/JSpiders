@@ -1,0 +1,42 @@
+div{
+    border-radius: 100%;
+    
+}
+h1{
+    font-size: 40px;
+}
+#a{
+    width: 30%;
+    height: 300px;
+    background-color: red;
+    float: left;
+    margin-left: 5px;
+}
+#b{
+    width: 30%;
+    height: 300px;
+    background-color: green;
+    float: left;
+    margin-left: 5px;
+}
+#c{
+    width: 30%;
+    height: 300px;
+    background-color: blue;
+    float: left;
+    margin-left: 5px;
+}
+img{
+    width: 350px;
+    margin:10% 40%;
+    transition: all 1s;
+}
+#a:hover~img{
+    transform: rotatex(75deg);
+}
+#b:hover~img{
+    transform: rotatey(75deg);
+}
+#c:hover~img{
+    transform: rotatez(75deg);
+}
