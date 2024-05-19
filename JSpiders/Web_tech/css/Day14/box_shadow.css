@@ -1,0 +1,15 @@
+div{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    /* margin: 400px 850px; */
+    margin-left: 40%;
+    margin-top: 400px;
+    border-radius: 100%;
+    transition: all 0.5s;
+    box-shadow: 5px 5px 5px black;
+}
+div:hover{
+    transform: rotate(45deg);
+    box-shadow: 50px 50px 0px black, -50px 50px 0px yellow, 50px -50px 0px lawngreen, -50px -50px 0px purple;
+}
