@@ -1,0 +1,84 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+#xaxis{
+    width: 300px;
+    height: 200px;
+    background-color: coral;
+    transition: all 0.5s;
+    transform: rotate(180deg);
+}
+#xaxis:hover{
+    /* transform: translatex(400px); */
+    transform: translate(400px) rotate(3500deg);
+}
+
+#yaxis{
+    width: 300px;
+    height: 200px;
+    background-color: teal;
+    transition: all 0.5s;
+    
+}
+#yaxis:hover{
+    transform: translatey(400px);
+}
+#xyaxis{
+    width: 300px;
+    height: 200px;
+    background-color: lawngreen;
+    transition: all 0.5s;
+}
+#xyaxis:hover{
+    transform: translate(200px,200px);
+    /* transform: translate(-200px,200px); */
+    /* transform: translate(200px,-200px); */
+}
+
+
+/* SCALE */
+#a,#b,#c{
+    height: 300px ;
+    width: 300px;
+    float: left;
+    transition: all 0.5s;
+}
+#a{
+    background-color: red;
+    
+}
+#b{
+    background-color: blue;
+    
+}
+#c{
+    background-color: yellow;
+    
+}
+#a:hover{
+    transform: scalex(0.5);
+}
+#b:hover{
+    transform: scaley(0.5);
+}
+#c:hover{
+    /* transform: scale(0.5); */
+    transform: scalex(1.5) scaleY(3);
+}
+
+
+/* SKEW */
+img{
+    width: 400px;
+    height: 300px;
+    float: right;
+    transition: all 0.5s;
+}
+img:hover{
+    /* transform: skewx(45deg); */
+    /* transform: skewY(-45deg); */
+    transform: skew(45deg, 120deg);
+
+}
