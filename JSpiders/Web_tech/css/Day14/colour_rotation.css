@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#container{
+    width: 550px;
+    height: 150px;
+    /* background-color: lawngreen; */
+    margin-top: 300px;
+    margin-left: 30%;
+}
+.subdiv
+{
+    width: 120px;
+    height: 120px;
+    border: 2px solid black;
+    float: left;
+    border-radius: 10px;
+    transform: skew(35deg,10deg) rotate(-20deg);
+    margin-left: -60px;
+    transition: all 0.5s;
+}
+.subdiv:hover{
+    transform: skew(0deg,0deg) rotate(0deg) rotateY(100deg) translate(0px,-200px) scale(1.5);
+    /* transform: rotate(90deg); */
+
+}
+#red{
+    background-color: red;
+    margin-left: 150px;
+}
+#blue{
+    background-color: blue;
+}
+#green{
+    background-color: green;
+}
+#orange{
+    background-color: orange;
+}
