@@ -1,0 +1,22 @@
+h1{
+    font-size: 80px;
+    text-align: center;
+    background-image: linear-gradient(75deg,red,blue);
+    background-image: url(/Asset/Image/1-nature-photography-spring-season-mumtazshamsee.jpg);
+    background-size: 500%;
+    background-position: center;
+    color: transparent;
+    -webkit-background-clip: text;
+    transition: 5s;
+}
+h1:hover{
+    background-position: right;
+    font-size: 150px;
+    /* text-align: justify; */
+}
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap');
+h2{
+    font-size: 80px;
+    font-family: "Jacquard 24", system-ui;
+
+}
