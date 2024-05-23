@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+#ball{
+    width: 150px;
+    height: 150px;
+    background-color: orange;
+    border-radius: 100%;
+    animation-name: animationball;
+    animation-duration: 10s;
+}
+@keyframes animationball {
+    0%{
+        transform: translate(0px,0px);
+        background-color:orange;
+    }
+    40%,100%{
+        transform: translate(800px,850px);
+        background-color:blue;
+    }
+    75%{
+        transform: translate(1780px,400px);
+        background-color:coral;
+    }
+    85%{
+        transform: translate(800px,0px);
+        background-color:teal;
+    }
+    95%{
+        transform: translate(0px,400px);
+        background-color:violet;
+        
+    }
+}
