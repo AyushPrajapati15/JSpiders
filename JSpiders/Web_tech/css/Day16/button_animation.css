@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+div{
+    border: 2px solid black;
+    width: 250px;
+    height: 150px;
+    float: left;
+    margin-left: 0.3px;
+    margin-top: 400px;
+}
+#red{
+    background-color: white;
+    animation-name: reds;
+    animation-duration: 3s;
+    margin-left: 40%;
+
+
+}
+#blue{
+    background-color: white;
+    animation-name: blues;
+    animation-duration: 3s;
+}
+
+
+@keyframes reds {
+    0%{
+        background-color: red;
+    }
+    20%{
+        background-color: white;
+    }
+    40%{
+        background-color: red;
+    }
+    60%{
+        background-color: white;
+    }
+    80%{
+        background-color: red;
+    }
+    100%{
+        background-color: white;
+    }
+    
+}
+
+@keyframes blues {
+    0%{
+        background-color: white;
+    }
+    20%{
+        background-color: blue;
+    }
+    40%{
+        background-color: white;
+    }
+    60%{
+        background-color: blue;
+    }
+    80%{
+        background-color: white;
+    }
+    100%{
+        background-color: blue;
+    }
+    
+}
