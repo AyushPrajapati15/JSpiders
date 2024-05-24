@@ -1,0 +1,33 @@
+*{
+    background-color: black;
+}
+h1{
+    text-align: center;
+    animation-name: textanimation;
+    animation-duration: 2s;
+    color: red;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+#heading1{
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+#heading2{
+    animation-delay: 2s;
+    animation-fill-mode: both;
+}
+#heading2{
+    animation-delay: 3s;
+    animation-fill-mode: both;
+}
+@keyframes textanimation {
+    from{
+        transform: translate(-1000px);
+    }
+    to{
+        transform: translate(0px);
+        color: yellowgreen;
+    }
+    
+}
