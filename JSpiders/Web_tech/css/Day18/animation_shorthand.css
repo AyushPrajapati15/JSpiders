@@ -1,0 +1,33 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border-radius: 100%;
+    margin-left: 150px;
+    margin-top: 150px;
+    box-shadow: 2px 2px 0px blue,-2px -2px 0px yellow,-2px 2px 0px green,2px -2px 0px red;
+    animation: AnimationShadow 5s ease-in-out 2s infinite alternate both;
+}
+@keyframes AnimationShadow {
+    0%{
+        transform: rotate(75deg);
+        box-shadow: 20px 20px 0px blue,-20px -20px 0px yellow,-20px 20px 0px green,20px -20px 0px red;
+
+    }
+    25%{
+        transform: rotate(120deg);
+            box-shadow: 32px 32px 0px blue,32px 32px 0px yellow,-2px 2px 0px green,2px -2px 0px red;
+
+    }
+    75%{
+        transform: rotate(360deg);
+            box-shadow: 2px 2px 0px blue,-2px -2px 0px yellow,-2px 2px 0px green,2px -2px 0px red;
+
+    }
+    100%{
+        transform: rotate(0deg);
+            box-shadow: 2px 2px 0px blue,-2px -2px 0px yellow,-2px 2px 0px green,2px -2px 0px red;
+
+    }
+    
+}
