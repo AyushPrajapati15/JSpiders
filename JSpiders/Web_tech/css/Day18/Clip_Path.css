@@ -1,0 +1,18 @@
+div{
+    width: 220px;
+    height: 150px;
+    background-color: teal;
+}
+#a{
+    background-image: url(/Asset/Image/Ferrari.jpg);
+    background-size: 100%;
+    background-position: center;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+
+}
+#b{
+    background-image: url(/Asset/Image/car.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 1%, 100% 0, 31% 100%, 0% 100%);
+}
