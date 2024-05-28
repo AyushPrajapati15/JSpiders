@@ -1,0 +1,18 @@
+div{
+    width: 320px;
+    height: 400px;
+    background-color: coral;
+    overflow: hidden;
+    overflow: scroll;
+}
+/* img{
+    opacity: 0.5;
+} */
+p{
+    height:200px;
+    background-color: coral;
+    /* overflow: auto; */
+    /* overflow: scroll; */
+    overflow-x: hidden;
+    overflow-y: scroll;
+}

@@ -1,0 +1,7 @@
+body{
+    background-image: url(/Asset/Image/star.jpg);
+    background-repeat: none;
+    background-attachment: scroll;
+    width: 100%;;
+    height: 600px;
+}
