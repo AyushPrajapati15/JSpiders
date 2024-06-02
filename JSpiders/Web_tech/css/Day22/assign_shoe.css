@@ -1,0 +1,51 @@
+
+#container{
+    width: 500px;
+    height:400px;
+    background-color: black;
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 35%;
+    
+}
+#img{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    /* top: 100px;
+    left: -250px; */
+    transition: all 1s;    
+    
+}
+img{
+    width: 400px;
+    filter: drop-shadow(5px 5px 1px green) drop-shadow(-5px -5px 1px red);
+    transition: all 1s;  
+    
+}
+#container:hover>#img{
+    scale: 1.5;
+    transition: all 1s;
+    transform: rotate(-50deg) translate(-180px,-200px);
+    position: absolute;
+    left: 180px;
+
+}
+.content{
+    color: transparent;
+    transition: all 1s;
+
+}
+h1{
+    position: absolute;
+    left: 60%;
+}
+p{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+}
+#container:hover>.content{
+    color: white;
+    transition: all 1s;
+}
