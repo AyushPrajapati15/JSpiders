@@ -1,0 +1,18 @@
+img{
+    width: 200px;
+}
+#text{
+    cursor: pointer;
+}
+#submit{
+    cursor: grab;
+}
+#img{
+    cursor: grabbing;
+}
+#h1{
+    cursor: none;
+}
+#file{
+    cursor: n-resize;
+}
