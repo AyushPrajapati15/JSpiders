@@ -1,0 +1,30 @@
+body{
+    background-color: skyblue;
+}
+img{
+    width: 400px;
+    height: 300px;
+    /* filter: blur(20px); */
+    /* filter: brightness(120%); */
+    /* filter: contrast(550%); */
+    /* filter: drop-shadow(); */
+    /* filter: grayscale(1100%); */
+    /* filter: hue-rotate(100deg); */
+    /* filter: invert(100%); */
+    /* filter: opacity(50%); */
+    /* filter: saturate(290%); */
+    /* filter: sepia(50%); */
+    /* box-shadow: 5px 5px 10px black; */
+    /* animation: animationcolor 10s infinite both; */
+    /* filter: drop-shadow(5px 5px 10px red) drop-shadow(-5px -5px 1px blue); */
+}
+
+@keyframes animationcolor {
+    from{
+        filter: hue-rotate(0deg);
+    }
+    to{
+        filter: hue-rotate(360deg);
+    }
+    
+}
