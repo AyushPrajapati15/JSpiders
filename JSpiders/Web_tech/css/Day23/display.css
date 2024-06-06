@@ -1,0 +1,51 @@
+
+h1{
+    background-color: limegreen;
+    width: 40%;
+    height: 200px;
+    /* display: inline; */
+    display: block;
+}
+p{
+    background-color: aqua;
+    width: 300px;
+    height: 100px;
+    /* display: inline; */
+    display: block;
+}
+span{
+    background-color: purple;
+    display: block;
+    width: 350px;
+    height: 300px;
+    animation: animation 2s infinite both;
+
+}
+b{
+    background-color: cyan;
+    height: 200px;
+    width: 30%;
+    display: block;
+}
+h1:hover~span{
+    display: block;
+    width: 100%;
+    font-size: 50px;
+    animation: animation 2s infinite both;
+}
+h1:hover~b{
+    display: block;
+    width: 100%;
+    font-size: 50px;
+    animation: animation 2s infinite both;
+
+}
+@keyframes animation {
+    form{
+        transform: translate(-1200px);
+        animation: animation 2s infinite both;
+    }
+    to{
+        transform: translate(0px);
+    }
+}
