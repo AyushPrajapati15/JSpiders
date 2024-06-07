@@ -1,0 +1,17 @@
+#container{
+    background-color: red;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+    flex-wrap: wrap;
+    flex-flow: wrap-reverse;
+
+}
+.subdiv{
+    width: 20%;
+    height: 100px;
+    background-color: yellow;
+}
