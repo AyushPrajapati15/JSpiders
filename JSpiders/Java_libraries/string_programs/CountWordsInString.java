@@ -1,4 +1,5 @@
-/*WAPTC number of words present in a given string */
+/* WAPTC number of words present in a given string */
+
 import java.util.Scanner;
 public class CountWordsInString{
     public static void main(String[] args) {
