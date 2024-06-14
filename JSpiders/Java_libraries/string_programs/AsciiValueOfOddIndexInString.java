@@ -1,4 +1,4 @@
-/*WAPTP ASCII values of odd index char present in a given string */
+/* WAPTP ASCII values of odd index char present in a given string */
 import java.util.Scanner;
 public class AsciiValueOfOddIndexInString {
     public static void main(String[] args) {
