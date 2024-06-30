@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(75deg,blue,red);
+    
+}
+#container{
+    border-radius: 100%;
+    width: 14vw;
+    height: 14vw;
+    background-color: skyblue;
+    position: fixed;
+    bottom: 5vw;
+    left: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    position: absolute;
+    width: 13vw;
+    height: 70px;
+    display: flex;
+    top: 2.5vw;
+    left: 1px;
+    transition: all 2s;
+    z-index: 3;
+}
+#container:hover img{
+    transform: rotate(360deg);
+}
+
+#mainlist{
+    position: relative;
+    bottom: 11vw;
+    left: 9vw;
+    z-index: 2;
+    /* display: none; */
+}
+.li{
+    width: 15vw;
+    background-color: white;
+    padding: 1vw;
+    text-align: center;
+    font-size: 2vw;
+    letter-spacing: 1vw;
+    text-shadow: 0.2px 0.2px 0.2px black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#container:hover #mainlist{
+    /* display: block; */
+
+}
+#car{
+    animation: car 1s 1.3s both;
+}
+@keyframes car {
+    from{
+        transform: translate(-600px,-600px) rotate(360deg);
+    }
+    to{
+        transform: translate(0px,0px) rotate(0deg);
+    }
+}
+
+#bike{
+    animation: bike 1s 1s both;
+}
+@keyframes bike {
+    from{
+        transform: translate(-800px,-600px) rotate(360deg);
+    }
+    to{
+        transform: translate(0px,0px) rotate(0deg);
+    }
+}
