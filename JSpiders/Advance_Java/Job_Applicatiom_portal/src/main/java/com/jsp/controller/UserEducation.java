@@ -40,6 +40,8 @@ public class UserEducation extends HttpServlet {
 		userInformation.setPercentage(percentage);
 		userInformation.setEmail_Id(email);
 		response.setContentType("text/html");
+		if(email!=null) {
+			
 		int res = dao.updateUserEducationDetails(userInformation);
 		if (res != 0) {
 //			RequestDispatcher dispatcher = request.getRequestDispatcher("Otp.html");
@@ -65,6 +67,14 @@ public class UserEducation extends HttpServlet {
 			writer.println("<center><h1>server 404</h1><center>");
 		}
 
+		}
+		else {
+			RequestDispatcher dispatcher = request.getRequestDispatcher("Registration.html");
+			dispatcher.include(request, response);
+			int res=dao.deleteFromUserDetails();
+			writer.println("<center><h1>server 404</h1><center>");
+			
+		}
 	}
 
 }
