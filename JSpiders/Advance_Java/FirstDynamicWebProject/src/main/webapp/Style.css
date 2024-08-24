@@ -1,0 +1,20 @@
+@charset "ISO-8859-1";
+*{
+	background-color:#0e725b;
+	color:yellow;
+	
+}
+
+.container{
+	
+}
+
+input{
+	border:2px solid #e9f40b;
+	width:200px;
+	height:40px;
+	font-size:15px;
+	border-radius:20px;
+	
+	
+}
