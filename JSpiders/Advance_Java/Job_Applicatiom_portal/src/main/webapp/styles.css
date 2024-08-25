@@ -1,0 +1,43 @@
+*{
+    color: coral;
+    background-color: rgb(0, 0, 0);
+    fot-size:20px;
+}
+
+.container{
+    width: 50%;
+    height: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 20px;
+    border-width: 20px 0px;
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+
+    
+}
+h1{
+    text-decoration: underline;
+    text-transform: lowercase;
+}
+input{
+    margin-top: 15px;
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    border-width: 5px;
+    font-size:15px;
+    
+}
+        
+.submit{
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius:0px ;
+    border-bottom-right-radius: 0px;
+    
+}
