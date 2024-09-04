@@ -7,10 +7,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class Dinga {
 	@Autowired
-//	@Qualifier("rani")
+	// @Qualifier("rani")
 	Instagram instagram;
-	public void chat()
-	{
+
+	public void chat() {
 		System.out.println(instagram.myChatList());
 	}
 

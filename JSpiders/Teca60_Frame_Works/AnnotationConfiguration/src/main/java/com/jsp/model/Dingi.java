@@ -12,8 +12,8 @@ public class Dingi implements Instagram {
 
 	@Override
 	public String myChatList() {
-		
-		return "Dingi is Online"+date.getDate();
+
+		return "Dingi is Online" + date.getDate();
 	}
 
 }
