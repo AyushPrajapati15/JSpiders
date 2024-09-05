@@ -13,27 +13,29 @@ public class BankCustomerDaoImpl implements BankCustomerDao {
 
 	@Override
 	public long insertBankCustomerObject(BankCustomer bankCustomer) {
-		EntityManagerFactory managerFactory=Persistence.createEntityManagerFactory("BankingOperationHybernate");
-		EntityManager manager=managerFactory.createEntityManager();
+		EntityManagerFactory managerFactory = Persistence.createEntityManagerFactory("BankingOperationHybernate");
+		EntityManager manager = managerFactory.createEntityManager();
 		EntityTransaction transaction = manager.getTransaction();
 		transaction.begin();
 		manager.persist(bankCustomer);
 		transaction.commit();
 		return bankCustomer.getAccountNumber();
-		
+
 	}
+
 	@Override
-	public BankCustomer selectBankCustomerDetailsByUsingEmailIdAndPassword(String emailid,int password) {
+	public BankCustomer selectBankCustomerDetailsByUsingEmailIdAndPassword(String emailid, int password) {
 		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("BankingOperationHybernate");
 		EntityManager entityManager = entityManagerFactory.createEntityManager();
 		EntityTransaction transaction = entityManager.getTransaction();
 		transaction.begin();
 		Query query = entityManager.createNamedQuery("selectcustomerbyemailidandassword");
-		query.setParameter(1,emailid);
+		query.setParameter(1, emailid);
 		query.setParameter(2, password);
 		BankCustomer bankCustomer = (BankCustomer) query.getSingleResult();
 		return bankCustomer;
 	}
+
 	@Override
 	public int updateCustomerAmount(int accountNumber, double balance) {
 		EntityManagerFactory managerFactory = Persistence.createEntityManagerFactory("BankingOperationHybernate");
@@ -46,11 +48,6 @@ public class BankCustomerDaoImpl implements BankCustomerDao {
 		int result = query.executeUpdate();
 		transaction.commit();
 		return result;
-		
-		
-		
-		
-		
-		
+
 	}
 }
