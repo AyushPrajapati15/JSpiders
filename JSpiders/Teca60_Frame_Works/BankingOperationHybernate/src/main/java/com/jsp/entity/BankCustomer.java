@@ -24,11 +24,12 @@ import javax.xml.crypto.Data;
 
 @AllArgsConstructor
 @NoArgsConstructor
-//@ToString
+// @ToString
 @lombok.Data
 @Entity
 @NamedQuery(name = "selectcustomerbyemailidandassword", query = "select bankcustomer from BankCustomer  bankcustomer where bankcustomer.emailId=?1 and bankcustomer.password=?2")
-@NamedQueries({@NamedQuery(name="updatecustomeramount",query = "update BankCustomer bankcustomer set  bankcustomer.amount=?1 where bankcustomer.accountNumber=?2")})
+@NamedQueries({
+		@NamedQuery(name = "updatecustomeramount", query = "update BankCustomer bankcustomer set  bankcustomer.amount=?1 where bankcustomer.accountNumber=?2") })
 public class BankCustomer {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -53,5 +54,3 @@ public class BankCustomer {
 	private int accountNumber;
 
 }
-
-
