@@ -1,9 +1,9 @@
 package com.jsp.model;
 
 public class Employee {
-	
+
 	private int id;
-	private int	deptno;
+	private int deptno;
 	private double sal;
 	private String name;
 
@@ -47,6 +47,5 @@ public class Employee {
 	public String toString() {
 		return "Employee [id=" + id + ", deptno=" + deptno + ", sal=" + sal + ", name=" + name + "]";
 	}
-
 
 }
