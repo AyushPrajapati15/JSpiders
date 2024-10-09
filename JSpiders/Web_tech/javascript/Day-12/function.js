@@ -19,11 +19,19 @@
 /***********Multiplication***********/
 // function mul()
 // {
+<<<<<<< HEAD
 //         var num1 = prompt("Enter a number");
 //         var num2 = prompt("Enter a number");
 //         console.log(`Multiplication of ${num1} and ${num2} is ${num1 * num2}`);
 //     }
 //     mul()
+=======
+    //     var num1 = prompt("Enter a number");
+    //     var num2 = prompt("Enter a number");
+    //     console.log(`Multiplication of ${num1} and ${num2} is ${num1 * num2}`);
+    // }
+    // mul()
+>>>>>>> ff913c96ca3ad915ce256dece5f79146527ce5cf
     
     
     

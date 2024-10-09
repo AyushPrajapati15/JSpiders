@@ -15,6 +15,10 @@ body {
 	<center>
 		<h1>Admin Login</h1>
 		<form action="adminlogin" method="post">
+<<<<<<< HEAD
+=======
+
+>>>>>>> ff913c96ca3ad915ce256dece5f79146527ce5cf
 			<label>Email-id:</label> <input type="email" id="adminmail"
 				name="adminmail"><br>
 			<br> <label>Password:</label> <input type="text"

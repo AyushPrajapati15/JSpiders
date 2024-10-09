@@ -1,4 +1,5 @@
 var num = prompt("Enter a number");
+<<<<<<< HEAD
 // for (let i = 1; i <= 10; i++)
 // {
 //     document.getElementById("result").innerHTML += num + " X " + i + " = " + (num * i)+"<btr>";
@@ -11,3 +12,12 @@ while (i <= 10)
 {
     document.getElementById("result").innerHTML += num + " X " + i + " = " + (num * i)+"<btr>";
 }
+=======
+for (let i = 1; i <= 10; i++)
+{
+    document.getElementById("result").innerHTML += num + " X " + i + " = " + (num * i)+"<btr>";
+    // console.log(num+" X "+i+" = "+num*i);
+    
+}
+
+>>>>>>> ff913c96ca3ad915ce256dece5f79146527ce5cf

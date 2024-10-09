@@ -36,8 +36,15 @@ public class CustomerServiceImpl implements CustomerService {
 			}
 		}
 		if (emailstatus) {
+<<<<<<< HEAD
 	
 			
+=======
+			
+			
+				
+				
+>>>>>>> ff913c96ca3ad915ce256dece5f79146527ce5cf
 		} else {
 			boolean es=false;
 			while(!es)
@@ -109,6 +116,7 @@ public class CustomerServiceImpl implements CustomerService {
 
 		}
 	}
+<<<<<<< HEAD
 
 	@Override
 	public void customerLogin() {
@@ -144,3 +152,7 @@ public class CustomerServiceImpl implements CustomerService {
 	}
 }
 //crej   911.4->     681.4-666.70    62
+=======
+}
+//crej            
+>>>>>>> ff913c96ca3ad915ce256dece5f79146527ce5cf

@@ -191,6 +191,7 @@ Javascript Tokens:-
         console.log(typeOf 'a');
         console.log(typeOf true);
 
+<<<<<<< HEAD
 Typecasting:
         -It is also known as type conversion, it is a process where we covert one datatype to another datatype.
         -In typecasting we have two types they are:
@@ -376,5 +377,10 @@ Javascript operator:
 
 
   
+=======
+
+
+        
+>>>>>>> ff913c96ca3ad915ce256dece5f79146527ce5cf
 
 

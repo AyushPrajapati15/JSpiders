@@ -51,14 +51,22 @@ public class AdminController {
 	}
 
 	@RequestMapping("/adminlogin")
+<<<<<<< HEAD
 //	@ResponseBody
+=======
+	@ResponseBody
+>>>>>>> ff913c96ca3ad915ce256dece5f79146527ce5cf
 	public String adminLogin(Admin admin, Model model) {
 		String emailid = admin.getAdminmail();
 		String password = admin.getAdminpassword();
 		Admin adminLoginDetails = adminDAO.adminLoginByEmailidAndPassword(emailid, password);
 		if (adminLoginDetails != null) {
 			List<Employee> allEmployeeDetails = commonProperties.allEmployeeDetails();
+<<<<<<< HEAD
 			model.addAttribute("allemployeedetails", allEmployeeDetails);
+=======
+//			model.addAttribute("allemployeedetails", allEmployeeDetails);
+>>>>>>> ff913c96ca3ad915ce256dece5f79146527ce5cf
 //			for (Employee employee : allEmployeeDetails) {
 //				System.out.println(employee.getEmployeeid());
 //				System.out.println(employee.getEmployeename());
@@ -68,10 +76,17 @@ public class AdminController {
 //				System.out.println(employee.getEmployeedeptno());
 //				System.out.println("*************************************************************");
 //			}			
+<<<<<<< HEAD
 			return "AllUserDetails";
 		}
 //		return "Login failed. Please check your credentials.";
 		return "redirect:/adminloginpage";
+=======
+			return "Admin Login Successful";
+		}
+		return "Login failed. Please check your credentials.";
+//		return "redirect:/adminloginpage";
+>>>>>>> ff913c96ca3ad915ce256dece5f79146527ce5cf
 
 	}
 	

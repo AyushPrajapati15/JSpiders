@@ -5,7 +5,10 @@
 		<class>com.jsp.entity.Customer</class>
 		<class>com.jsp.entity.Product</class>
 		<class>com.jsp.entity.Cart</class>
+<<<<<<< HEAD
 		<class>com.jsp.entity.Admin</class>
+=======
+>>>>>>> ff913c96ca3ad915ce256dece5f79146527ce5cf
 		<properties>
 			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/shopping"/>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>

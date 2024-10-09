@@ -31,6 +31,7 @@
 		<nature>org.eclipse.m2e.core.maven2Nature</nature>
 		<nature>org.eclipse.wst.common.project.facet.core.nature</nature>
 	</natures>
+<<<<<<< HEAD
 	<filteredResources>
 		<filter>
 			<id>1726333168874</id>
@@ -42,4 +43,6 @@
 			</matcher>
 		</filter>
 	</filteredResources>
+=======
+>>>>>>> ff913c96ca3ad915ce256dece5f79146527ce5cf
 </projectDescription>

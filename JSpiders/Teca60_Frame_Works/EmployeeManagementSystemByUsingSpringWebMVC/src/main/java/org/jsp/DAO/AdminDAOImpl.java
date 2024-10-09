@@ -16,7 +16,11 @@ public class AdminDAOImpl implements AdminDao{
 	
 	public Admin adminLogin(String email_id,String password)
 	{
+<<<<<<< HEAD
 		String select="select * from admin where EMAILID=? and PASSWORD=? ";
+=======
+		String select="select * from admin where EMAILID=> and PASSWORD=? ";
+>>>>>>> ff913c96ca3ad915ce256dece5f79146527ce5cf
 		RowMapper<Admin> map =(rs,rowNum)->{
 			Admin admin=new Admin();
 			admin.setId(rs.getInt("ID"));

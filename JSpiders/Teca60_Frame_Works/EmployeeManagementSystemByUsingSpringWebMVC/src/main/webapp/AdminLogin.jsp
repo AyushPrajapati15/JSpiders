@@ -9,7 +9,10 @@
 <body>
 <center>
 <form action="adminlogin">
+<<<<<<< HEAD
 <h1>Admin login</h1>
+=======
+>>>>>>> ff913c96ca3ad915ce256dece5f79146527ce5cf
 <input placeholder="Enter Email" name="email"><br>
 <input placeholder="Enter password" name="password"><br>
 <input type="submit">

@@ -12,13 +12,21 @@ import com.jsp.entity.Customer;import com.jsp.service.CustomerService;
 
 public class App 
 {
+<<<<<<< HEAD
     public static void main( String[] args)
+=======
+    public static void main( String[] args )
+>>>>>>> ff913c96ca3ad915ce256dece5f79146527ce5cf
     {
     	Scanner scanner =new Scanner(System.in);
     	ApplicationContext context= new AnnotationConfigApplicationContext(TecaConfig.class);
     	CustomerDAO customerDAO = context.getBean(CustomerDAO.class);
     	CustomerService customerService = context.getBean(CustomerService.class);
+<<<<<<< HEAD
    
+=======
+    	
+>>>>>>> ff913c96ca3ad915ce256dece5f79146527ce5cf
     	boolean status=true;
     	while (status) 
     	{
@@ -33,7 +41,10 @@ public class App
 				break;
 			case 2:
 				System.out.println("Customer login");
+<<<<<<< HEAD
 				customerService.customerLogin();
+=======
+>>>>>>> ff913c96ca3ad915ce256dece5f79146527ce5cf
 				break;
 			case 3:
 				customerService.CustomerDetails();

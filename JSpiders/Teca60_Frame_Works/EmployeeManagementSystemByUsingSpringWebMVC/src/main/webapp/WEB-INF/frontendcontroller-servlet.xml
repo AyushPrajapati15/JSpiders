@@ -14,12 +14,17 @@
    </bean>
    -->
    
+<<<<<<< HEAD
    <context:component-scan base-package="org.jsp"></context:component-scan>
+=======
+   <context:component-scan base-package="org.jsp.controller"></context:component-scan>
+>>>>>>> ff913c96ca3ad915ce256dece5f79146527ce5cf
 
    <bean id="view" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
    <property name="prefix" value="/"></property>
    <property name="suffix" value=".jsp"></property>
    </bean>
+<<<<<<< HEAD
    
    <bean id="userdatasource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
    <property name="url" value="jdbc:mysql://localhost:3306/teca61?"></property>
@@ -52,5 +57,7 @@
 
 
 
+=======
+>>>>>>> ff913c96ca3ad915ce256dece5f79146527ce5cf
 
 </beans>
