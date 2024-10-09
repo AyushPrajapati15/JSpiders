@@ -1,0 +1,198 @@
+Javascript is a object oriented, object based scripting language,which is used to develope functional part of the web page.
+
+Characterstics of javascript:-
+-> It is a programming language or scripting language, which means it will create a response with respect to the program.
+-> It is a dynamic language which means the javascript code can be updated in upcomming lines.
+-> It is a Synchronous language, which means the browser engine executes the programm line by line.
+-> It is a single threaded language, the javascript have single thread or single stack which is call stack.
+-> It is a high level language which means javascript is human understandable language 
+-> It is a interpreted language 
+
+Ways to write Javascript program:-
+-> Javascript program can be written/performed in two ways they are
+        - Internal Javascript
+        - External javascript
+
+.Internal Javascript:-
+        .It is performed by using Script tag which we have to specify inside the body tag after writing Html part of the program.
+      Eg:
+        <body>
+        <h1 id="heading"></h1>
+        <script>
+                document.getElementById("heading").innerHTML="This is inside the H1 which is on UI"
+        </script>
+        </body>
+
+.External javascript:
+        -It is performed by using external javascript document.
+        -We have to link the external javascript by using script tag.
+        -In the script tag we have to specify src attribute, for the src attribute we have to pass url of external javascript document.
+        -We use differ attribute to specify the browser to run Html document at first then javascript document
+
+     Eg:-  HTML document:-
+        <head>
+        <title>Document</title>
+        <script src="externaljs.js" defer async></script>
+        </head>
+        <body>
+        <h1 id="heading">Hello</h1>
+        </body>
+        </html>
+        
+        Javascript document :-  document.getElementById("heading").innerHTML = "This is external js";
+
+
+Javascript Printing Statements:-
+        -In js we have printing statements like:
+                console.log(), document.write(), document.writeln(), window.alert, innerHTML, innerText.
+
+  .console.log(): 
+        -It is used to debug the code.
+        -The console.log() prints the output in browser console.
+        -In console.log(), console is a object log() is a function which is inside the console object and it is accessed by using "." notation.
+      Eg:
+        console.log("This is in browser console");
+        console.log(10 + 5);
+        console.log(console);
+
+  .document.write():-
+        - It is used to print the output on UI.
+        -In document.write(), document is a object which refers to current html document, write() is a function which is inside the document object
+         and it is accessed by using "." notation.
+        -We don't use document.write() on real time projects because it have its disadvantages like:
+                ->It will replace the parent document.
+                ->The document.write will not work if the program is asynchronously imported.
+
+           Eg: document.write("This is on <b style='color:red'><i> User</i></b> interface");
+  
+  .document.writeln():-
+        -It is similar to document.write, the difference between document.write() and writeln() is, it gives single space between the statements.
+     Eg: 
+         document.writeln("<br> One");
+         document.writeln("Two");
+
+  .window.alert():-
+        -It is used to print the output on dialog of browser or pop-up window of the browser.
+        -The dialog will wait until the user dismisses the dialog box by clicking on ok button.
+        -In window.alert(), window is a object alert is a function which is inside the window object, to access the alert we have to use '.' notation.
+        -Whenever a function or a object or a property which have direct relationship with the window object there is no need to specify the window object.
+     Eg:
+        window.alert("OOPS");
+        alert("this is second alert");
+  
+  .innerHTML:
+        -It is a property which is used to ask the value inside the html elements.
+        -To use innerHTML property we have to use DOM methods to target the element.
+        -In innerHTML it will consider html tag as a tag.
+      Eg:
+        HTML document:
+            <h1 id="heading"></h1>
+
+        javascript document:
+                document.getElementById("heading").innerHTML = "This is inside H1 tag";
+
+  .innerText:-
+        -It is used to pass the value inside the html elements.
+        -To use the innerText we have to use DOM methods to target the element.
+        -In innerText if we specify html elements it will be consider as text.
+     Eg:
+        Html document
+                <span id="heading1"></span>
+        Javascript document
+                document.getElementById("heading2").innerText = "<p>content int js</p>";
+
+        
+Javascript Tokens:-
+        -Token is a smallest unit of programming language.
+        -In javascript we have tokens like:
+                .Variable
+                .Identifier
+                .Value
+  .Variable:
+        -Variable are used to allocate the memory block, in javascript we have 3 types of Variable they are
+                .Var
+                .let
+                .const
+          .Var:
+                -var is a functionscope variable in which we can performe hoisting, in var we can re-declare and re-initialize the variable.
+             Eg:
+                var num=10;
+                console.log(num);
+          .Let:
+                -Let is a variable with block scope, In let we can perform re-initialization but we cannot perform re-declaration and hoisting.
+             Eg:
+                let num=20;
+                console.log(num);
+          .Const:
+                -Const is a Block scope variable, if we declare the const in the same statement we have to initialize, the const value must kept constant throughout 
+                 the program which means we cannot re-initialize and re-declare.
+                -In const we cannot perform variable hoisting
+            Eg:
+                const num=20;
+                console.log(num);
+
+  .Variable hoisting:
+        -using the variable before its declaration is called hoisting.
+        -In javascript we can perform variable hoisting only in var 
+      Eg:
+        console.log(a);
+        var a=10;
+        console.log(a);
+
+ .Difference between Var,Let and Const
+                Status                                          |         Var     |     Let     |        Const
+        --------------------------------------------------------|-----------------|-------------|----------------------------------------------- 
+                Declaration & initialization                    |         Y       |       Y     |          Y
+                Only declaration                                |         Y       |       Y     |          N
+                Declaration after initialization                |         Y       |       Y     |          Y
+                Re-declaration                                  |         Y       |       N     |          N
+                Re-initialization                               |         Y       |       Y     |          N
+                Scope                                           |      FUNCTION   |    Block    |        BLOCK       
+                Hoisting                                        |         Y       |       N     |          N
+  .Identifier:
+        - Identifier are the names given for the memory block        to write Identifier we have to follow some rules
+                .We have to write Identifier with camel casing.
+                .We should not start Identifier with numbers or special Characters except $ and _ .
+                .We should not use keywords as identifier.
+                -We should not give space in between the identifier.
+                -There is no limit for length of identifier but we may face some problem with some javascript engines if the identifier is longer than 31 characters.
+        
+  .Value:
+        -Values are nothing but data which is stored in the memory block.
+        -In javascript we have two types of data type they are:
+                .Primitive data type.
+                .Non-Primitive data type.
+  
+          .Primitive :
+                -In javascript in Primitive data type it will not return object type and it represents single value and immutable.
+                -In javascript we have Primitive data types like:
+                        .Number -  Eg: var num=10;
+                        .String -  Eg: car str="Ayush";
+                        .Undefined-Eg: var un=undefined;
+                        .Null   -  Eg: var nu=null;     
+                        .Symbol -  Eg: var sym=Symbol();
+                        .bigint -  Eg: var num2 = BigInt(12365468497465125468965132549);
+                        .Boolean - Eg: var bool=true;
+
+**NOTE** - NULL IS A PRIMITIVE DATA TYPE EVEN AFTER THE RETURN TYPE IS OBJECT,BECAUSE IT RETURNS EMPTY OBJECT.
+          
+          .Non-Primitive data type:
+                -Non Primitive data types are also called as object type because the typeOf of Non-Primitive data type is object type.
+                -In javascript we have non-primitive data types like:
+                        .function
+                        .Array
+                        .Object
+
+  .typeOf:
+        -It is a operator which returns the data type of javascript values.
+        -It always return string type output.
+     Eg: 
+        console.log(typeOf "Ayush");
+        console.log(typeOf 'a');
+        console.log(typeOf true);
+
+
+
+        
+
+

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Underwriter Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        label {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        input[type=text], input[type=password] {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        
+        button {
+            padding: 12px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+        .error-message {
+            color: red;
+            margin-top: 10px;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h4>STAR PROTECT VEHICLE SYSTEM</h4>
+        <a href="index.html">Home</a>
+    </div>
+
+    <div class="container">
+        <h1>Underwriter Login</h1>
+        <form id="loginForm" onsubmit="loginUnderwriter(); return false;">
+            <label for="underwriterId">Underwriter ID:</label>
+            <input type="text" id="underwriterId" name="underwriterId" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+            <p id="errorMessage" class="error-message"></p>
+        </form>
+    </div>
+
+    <script>
+        function loginUnderwriter() {
+            var underwriterId = document.getElementById('underwriterId').value;
+            var password = document.getElementById('password').value;
+
+            // Static data for underwriter login
+            var staticData = {
+                '123': 'password123',
+                '456': 'password456',
+                '789': 'password789'
+            };
+
+            if (staticData[underwriterId] && staticData[underwriterId] === password) {
+                alert('Login successful!');
+                window.location.href = 'underwriter_home.html'; // Replace with the actual page you want to redirect after login
+            } else {
+                document.getElementById('errorMessage').textContent = 'Invalid Underwriter ID or Password.';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+    .Slice method:
+        -It is used to create a new string from an existing string.
+        -For the slice method we have to give starting index and ending index.
+        -For the slice method we can also pass negative index value.
+      Eg:
+            var str = "apple";
+            console.log(str.slice(0,2));
+
+    .Substring method:
+        -It is a function which is also used for creating a new string from an existing String.
+        -For the substring we have to give Starting index value and exding index value. The index value should not be negative.
+      Eg:
+            
+            var str = "apple";
+            console.log(str.substring(0,2));
+            console.log(str.substring(2,4));
+
+    .Substr:
+        -It is a function which is used to create a new string from an existing string, substr is one of the deprecated function for the 
+         substr we have to specif starting index value and no of characters.
+      Eg:
+            
+            var str = "apple";
+            console.log(str.substr(-4,-2));
+            console.log(str.substr(-2,2));
+
+    .IndexOf:
+        -It is a function which is used to find the index of first occurance of search string, for the index of we can pass 2 values they are searched string and starting index.
+    
+    .LastIndexOf:
+        -It is a function which is used to find the index position of last occurance of specified string.
+    
+      Eg:
+            
+            var str = "Apple Mango Banana";
+            console.log(str.indexOf("a"));
+            console.log(str.indexOf("a", 8));
+            console.log(str.lastIndexOf("a"));
+
+    .Replace:
+        -It is used to replace the search string with replace value, for the replace method we have to specify two value they are search value and replace value.
+        - The replace method will only replace first occurance of searched string.
+
+    .ReplaceAll:
+        -It is used to replace all the string which matches searched string.
+
+      Eg:
+                            
+            var str = `she shells seashells by the seashore.`;     
+            console.log(str.replace("she", "he"));
+            console.log(str.replaceAll("she", "he"));
+
+    .Trim method:
+        -It is used to remove the starting and ending space from the string.
+
+    .TrimStart:
+        -It is used to remove the starting space from the string.
+
+    .TrinEnd:
+        -It is used to remove the ending space from the string.
+      Eg:
+            
+            var str = " Apple ";
+            console.log(str,str.length);
+            var str1 = str.trim();
+            console.log(str1,str1.length);
+            var str2 = str.trimStart();
+            console.log(str2, str2.length);
+            var str3 = str.trimEnd();
+            console.log(str3,str3.length);
+    
+    .PadStart:
+        -It is used to specify the padding string before the actual string, for the PadStart we have to pass two values they are : maxlength and filledStream.
+
+    .PadEnd:
+        -It is used to add the padding in end of the string for the PadEnd we have to pass two values they are : maxlength and filledStream.
+    
+      Eg:
+            var str = "Apple";
+            var str1 = str.padStart(5, "B");
+            console.log(str1);
+            var str2 = str.padStart(7, "an");
+            console.log(str2);
+            var str3 = str.padEnd(10, "e");
+            console.log(str3);
+
+    .Includes function:
+        -It is used to check whether the specified string is present in the main string or not.
+    
+    .StartsWith:
+        -It is used to check whether the main string is starting with specified string or not.
+
+    .EndsWith:
+        -It is used to check whether the main string is ending with specified string or not.
+
+      Eg: 
+                
+            var str = `she shells seashells by the seashore`;
+            console.log(str.includes("by"));
+            console.log(str.includes("bye"));
+            console.log(str.startsWith("she"));
+            console.log(str.endsWith("shells"));
+            console.log(str.endsWith("shells."));
+
+    .Print function:
+        -It is used to print the current screen.
+
+      Eg:
+            <input type="submit" value="Print Screen" onclick="print()">
