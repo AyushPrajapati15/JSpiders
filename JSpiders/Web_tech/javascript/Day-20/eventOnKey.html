@@ -1,0 +1,34 @@
+
+<!-- event 3, event4 purple blue -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./eventOnKey.js"></script>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+        }
+
+        img{
+            width: 220px;
+            margin-top: 44%;
+            transition: all 0.5s;
+        }
+    </style>
+</head>
+<body onkeyup="down()" onkeydown="jump()">
+    <marquee scrollamount="40" direction="right">
+
+        <img src="../../Asset/Image/ironman.gif" alt="">
+    </marquee>
+        
+</body>
+</html>

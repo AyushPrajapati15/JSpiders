@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./AssignButton.js"></script>
+</head>
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+    #box{
+        width: 100%;
+        height: 400px;
+    }
+
+    #circle {
+
+        width: 100px;
+        height: 10vh;
+        border-radius: 100%;
+        border: 2px solid coral;
+        margin: 0px 0px 0px 0px;
+        
+    }
+
+    #top,
+    #left,
+    #down,
+    #right {
+        width: 40px;
+        height: 40px;
+        border: 2px solid teal;
+        align-content: center;
+        cursor: pointer;
+    }
+
+    #top {
+        margin-top: 23%;
+        margin-left: 50vw;
+
+    }
+
+    #cont {
+        margin-top: 1%;
+        margin-left: 47vw;
+    }
+
+    .box {
+        float: left;
+        margin-left: 5px;
+    }
+
+    p {
+        padding-left: 15px;
+    }
+</style>
+
+<body>
+    <div id="box">
+        <div id="circle"></div>
+    </div>
+
+    <div id="top" onclick="">
+        <p>&uarr;</p>
+    </div>
+
+    <div id="cont">
+        <div class="box" id="left" onclick="left()"><p>&larr;</p></div>
+        <div class="box" id="down" onclick=""><p>&darr;</p> </div>
+        <div class="box" id="right" onclick="right()"><p>&rarr;</p></div>
+    </div>
+</body>
+
+</html>

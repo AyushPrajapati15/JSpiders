@@ -1,0 +1,404 @@
+    .Slice method:
+        -It is used to create a new string from an existing string.
+        -For the slice method we have to give starting index and ending index.
+        -For the slice method we can also pass negative index value.
+      Eg:
+            var str = "apple";
+            console.log(str.slice(0,2));
+
+    .Substring method:
+        -It is a function which is also used for creating a new string from an existing String.
+        -For the substring we have to give Starting index value and exding index value. The index value should not be negative.
+      Eg:
+            
+            var str = "apple";
+            console.log(str.substring(0,2));
+            console.log(str.substring(2,4));
+
+    .Substr:
+        -It is a function which is used to create a new string from an existing string, substr is one of the deprecated function for the 
+         substr we have to specif starting index value and no of characters.
+      Eg:
+            
+            var str = "apple";
+            console.log(str.substr(-4,-2));
+            console.log(str.substr(-2,2));
+
+    .IndexOf:
+        -It is a function which is used to find the index of first occurance of search string, for the index of we can pass 2 values they are searched string and starting index.
+    
+    .LastIndexOf:
+        -It is a function which is used to find the index position of last occurance of specified string.
+    
+      Eg:
+            
+            var str = "Apple Mango Banana";
+            console.log(str.indexOf("a"));
+            console.log(str.indexOf("a", 8));
+            console.log(str.lastIndexOf("a"));
+
+    .Replace:
+        -It is used to replace the search string with replace value, for the replace method we have to specify two value they are search value and replace value.
+        - The replace method will only replace first occurance of searched string.
+
+    .ReplaceAll:
+        -It is used to replace all the string which matches searched string.
+
+      Eg:
+                            
+            var str = `she shells seashells by the seashore.`;     
+            console.log(str.replace("she", "he"));
+            console.log(str.replaceAll("she", "he"));
+
+    .Trim method:
+        -It is used to remove the starting and ending space from the string.
+
+    .TrimStart:
+        -It is used to remove the starting space from the string.
+
+    .TrinEnd:
+        -It is used to remove the ending space from the string.
+      Eg:
+            
+            var str = " Apple ";
+            console.log(str,str.length);
+            var str1 = str.trim();
+            console.log(str1,str1.length);
+            var str2 = str.trimStart();
+            console.log(str2, str2.length);
+            var str3 = str.trimEnd();
+            console.log(str3,str3.length);
+    
+    .PadStart:
+        -It is used to specify the padding string before the actual string, for the PadStart we have to pass two values they are : maxlength and filledStream.
+
+    .PadEnd:
+        -It is used to add the padding in end of the string for the PadEnd we have to pass two values they are : maxlength and filledStream.
+    
+      Eg:
+            var str = "Apple";
+            var str1 = str.padStart(5, "B");
+            console.log(str1);
+            var str2 = str.padStart(7, "an");
+            console.log(str2);
+            var str3 = str.padEnd(10, "e");
+            console.log(str3);
+
+    .Includes function:
+        -It is used to check whether the specified string is present in the main string or not.
+    
+    .StartsWith:
+        -It is used to check whether the main string is starting with specified string or not.
+
+    .EndsWith:
+        -It is used to check whether the main string is ending with specified string or not.
+
+      Eg: 
+                
+            var str = `she shells seashells by the seashore`;
+            console.log(str.includes("by"));
+            console.log(str.includes("bye"));
+            console.log(str.startsWith("she"));
+            console.log(str.endsWith("shells"));
+            console.log(str.endsWith("shells."));
+
+    .Print function:
+        -It is used to print the current screen.
+
+      Eg:
+            <input type="submit" value="Print Screen" onclick="print()">
+
+.Function:
+    -It is a block of code which performs a specific task.
+    -In function we have two catagories they are:
+        .Function Declaration
+        .Function Expression
+
+      .Function Declaration:
+            -Function declaration is declared by using function keyword followed by function name.
+            -To execute the function it is mandatory to call the function by using function name.
+
+            SYNTAX:
+                    function function_Name(){
+                        statements;
+                    }
+                    function_Name;
+            Eg:
+                    function mul()
+                    {
+                            var num1 = prompt("Enter a number");
+                            var num2 = prompt("Enter a number");
+                            console.log(`Multiplication of ${num1} and ${num2} is ${num1 * num2}`);
+                    }
+                    mul()
+          .Function with args:
+            -in function we can have 'n' number of args in function calling statement.
+            -to collect the argument we have to use parameters inside the function().
+
+            SYNTAX:
+                    function function_Name(para1,para2,....,paraN)
+                    {
+                        statement
+                    }
+                    function_Name(arg1,arg2,...,argN)
+            Eg:
+                    function fun(uName, uId, uEmail, uGender)
+                    {
+                        console.log(uName);
+                        console.log(uId);
+                        console.log(uEmail);
+                        console.log(uGender);
+                    }
+                    fun("Alice", 1024, "alice@gmail.com", "Male")
+
+          .Function with return type:
+            -In function we can return the value to function calling statement by using return keyword,we can return only one value. 
+            NOTE:- TO RETURN MULTIPLE VALUES WE RETURN IN THE FORMAT OF ARRAY.
+
+            SYNTAX:
+                    function function_Name(para1,para2,....,paraN)
+                    {
+                        statement;
+                        return value;
+                    }
+                    function_Name(arg1,arg2,...,argN)
+            Eg:
+                    
+                    function add(num1, num2)
+                    {
+                        console.log(num1+num2);
+                    }
+                    add(10, 20)
+                    add(20,40)
+      
+      .Function Expression:
+        -In javascript function Expression are the function that are defined also
+        -We cannot hoist the function expression like function declaration.
+        -We have function expressions like:
+            .Anonymous Function.
+            .IIFE(Immedite Invoked Function Expression)
+            .Arrow function
+            .Higher order function and callback function
+            .Nested function.
+        
+          .Anonymous Function:
+            -It is also called as nameless function. In the anonymous function there is no need to specify the function name we have to
+             pass the entire function as a value for variable. The varable name with parenthesis () will act as function calling statement.
+            
+            SYNTAX:
+                    varable identi= function(){
+                        statement;
+                    }
+                    identi();
+            Eg:     
+                    var fun = function ()
+                    {
+                        console.log("this is a annonomus function and here hoisting is not possible");
+                    }
+                    fun();
+                
+            .Function with args:
+                -In anonymous function we can also have function with args.
+                SYNTAX:
+                    var identi=function function_Name(para1,para2,....,paraN)
+                    {
+                        statement;
+                    }
+                    identi(arg1,arg2,...,argN);
+                Eg:
+                    var add = function (num1, num2) {
+                        console.log(num1+num2);
+                    }
+                    add(10, 20)
+
+            .Function with return type:
+                SYNTAX:
+                    var identi=function function_Name(para1,para2,....,paraN)
+                    {
+                        statement;
+                        return value;
+                    }
+                    identi(arg1,arg2,...,argN);
+                Eg:
+                    var prod=function(num1, num2)
+                    {
+                        return num1 * num2;
+                    }
+                    console.log(prod(10,5));
+
+          .IIFE:
+            -It stands for Immediately invoked function expression.
+            -in IIFE we use two parenthesis with semi colon " ()(); ". The first () represents anonymous function and 
+             second () represents function calling statement.
+            -To avoid the function calling junc we use IIFE. 
+
+                SYNTAX:
+                    (function(){
+                        statement;
+                    })();
+                Eg:
+                    (function(){
+                        console.log("This is IIFE);
+                    })();
+            
+            .IIFE with args:
+                SYNTAX:
+                        (function(para1,para2,...,paraN){
+                            statement;
+                        })(arg1,arg2,...,argN);
+                    
+                Eg:
+                        (function (a, b)
+                        {
+                            console.log(a+b);
+                        })(10,20);
+
+            .IIFE with return type:
+                SYNTAX:
+                        (function(para1,para2,...,paraN){
+                            statement;
+                            return value;
+                        })(arg1,arg2,...,argN);
+                Eg:
+                        var fun2=(function(){
+                            console.log("This is IIFE");
+                            return 5;
+                        })();
+                            console.log(fun2);
+
+          .Arrow function:
+            -It is one of the shortest way of writig a function.
+            -In the arrow function we dont use function keyword we use Fat arrow(=>)
+                SYNTAX:
+                        variable identi=()=>{
+                            statement;
+                        }
+                Eg:
+                        var arr=()=>{
+                            console.log("This is arrow function");
+                        }
+                        arr();
+
+            -For the arrow function if we have single statement there is no need to specify function block.
+                SYNTAX:
+                        varable identi=()=>statement
+                Eg:
+                        var arr=()=>console.log("This is an arrow function")
+                        arr()
+                
+            .Arrow function with args:
+                -In the arrow function we an have 'n' number of args while calling the function to collect the value from the args we have to use 
+                 parameters inside the function parenthesis().
+                
+                    SYNTAX: 
+                            variable identi=(parameters..)=>{
+                            statement;
+                            }
+                            identi(args...)
+                    Eg:
+                            var add = (num1, num2) => 
+                            {
+                                console.log(num1+num2);
+                            }
+                            add(10,10)
+
+                -In arrow function if we have only one parameters there is no need to specify function parenthesis().
+
+                    SYNTAX:
+                            variable ident=para1=>{
+                                statement;
+                            }
+                            ident(args1);
+
+                    Eg:
+                            var add = (num1) => console.log(num1+1);
+                            add(10)
+
+                -In arrow function we can also have function with return type.
+                    SYNTAX:
+                            variable ident=(para1,para2)=>{
+                                statement;
+                                return value;
+                            }
+                            ident(arg1,arg2)
+                    Eg:
+                            var add(num1,num2)=>{
+                                return num1+num2;
+                            }
+                            console.log(add(4,5))
+
+          .Higher order function and call back function:
+            -Higher order function is a function which takes call back function as a argument
+            -Call back function is a function which is passed as argument for Higher order function.
+                
+                SYNTAX:
+                        function callBack(){
+                            statement;
+                        }
+                        function higherorderFunctionName(callBack){
+                            statement;
+                            callBack();
+                        }
+                        higherorderFunctionName(callBack)
+                Eg:     
+                        function fun1(){
+                            console.log("This is callback function1");
+                        }
+                        function fun2(){
+                            console.log("This is callback function2");
+                        }
+                        function fun3(){
+                            console.log("This is callback function3");
+                        }
+
+                        function highFun1(callBackFun1,callBackFun2,callBackFun3){
+                            callBackFun1()
+                            callBackFun2()
+                            callBackFun3()
+                            console.log("This is higher order function")
+                        }
+                        highFun1(fun1,fun2,fun3)
+                    
+          .Nested function:
+            -Function inside another function is called as nested function
+                Eg:
+                        function parent() {
+                        console.log("This is parent function");
+                        function child() {
+                            console.log("This is child function");
+                        }
+                        return child;
+                        }
+                        var child = parent();
+                        child()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+//belur

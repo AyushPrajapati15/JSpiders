@@ -1,0 +1,1 @@
+    document.getElementById("heading").innerHTML = "This is inside the H1 which is on UI"

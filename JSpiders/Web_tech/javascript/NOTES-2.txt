@@ -1,0 +1,93 @@
+value:
+    -It is a property which is used to collect the value from the input box from the user.
+   Eg:
+        var colour=document.getElementById("colour").value;
+
+Style:
+    -It is used to apply the css value from the js to the html elements
+   Eg:
+        document.body.style.color="red";
+
+Javascript Events:
+    -Events are the things that happens to html elements when the user interacts with the elements.
+    -In js we have event handlers like:
+
+        .onClick: - perform the event when the user clicks on html elements
+                Eg: <input type="button" onClick="func()" value="name>
+
+        .onKeyDown: - To perform the event when the user press down the keyboard keys we use onKeyDown event handlers
+        .onKeyUp: - To call the function when the user releases the keyboard key we use onKeyUp event handler.
+                Eg:            <body onkeyup="down()" onkeydown="jump()">
+                                    <marquee scrollamount="40" direction="right">
+                                        <img src="../../Asset/Image/ironman.gif" alt="">
+                                    </marquee>
+                                </body>
+        .onInput: - It is used to perform the event when the user enters input inside the input box 
+                Eg: <input id="colour" onInput="func()" placeholder="Enter the color">
+
+        .onMouseDown: - It is used to call the function when the user presses down the mouse key.
+        .onMouseUp: - It is used to call the function when the user releases the mouse button 
+                Eg:  <img onmousedown="visible()" onmouseup="invisible()" src="../../Asset/Image/ironman.gif">
+
+        .onMouseOver: - To call the function when the cursor is on the top of the element we use onMouseOver event handler.
+        .onMouseOut: - When the cursor is moved out of the element to call the sunction we use onMouseOut event handler.
+                Eg: <div  onmouseover="fun()" onmouseout="fun()"> </div>
+        
+        .onFocus: - It is used to call the function when the user focus into the input box by clicking on it.
+        .onBlur: - It is used to call the function when the input tag loose it's focus.
+                    Eg: <input  onfocus="focused()" onblur="blured()"> </input>
+        
+        .onChange: - It is used to call the function when the user performs changes in inp4 tag.
+                    Eg: 
+                        <h1 id="mess" ></h1>
+                        <select onchange="fun()">
+                            <option>Red</option>
+                            <option>Green</option>
+                            <option>Blue</option>
+                            <option>Orange</option>
+                        </select>
+                    
+        .addEventListner: - It is used to create the relationship between element and event.
+                           -For the addEventListner we have to pass two values they are event handler and function.
+                    Eg: 
+                        allinput[0].addEventListener("click",redcol)
+                        function redcol() {
+                            document.body.style.backgroundColor = "red";
+                        }
+
+.Create Element:
+    -Create element function is used to create the html elements in js.
+    -For the create element function we have to specify the element name as a value.
+    -After creating the element we have to append rhe element to the parent element by using append child.
+                    Eg: var divTag = document.createElement("div");
+                        document.body.appendChild(divTag);
+                        divTag.style.width = "400px";
+                        divTag.style.height = "400px";
+                        divTag.style.backgroundColor = "black";
+
+.Set and Remove Attribute:
+     .Set Attribute:
+        -St=et attribute function is used to insert the attribute inside the html elements.
+        -For the set attribute we have to pass two values they are: Attribute Name and Attribute Value.
+
+     .Remove attribute: 
+        -It is used to remove the attribute from html elements.
+        -For the remove attribute we have to pass one value which is attribute name.
+            Eg-1 :
+                        var input=document.querySelector("input")
+                        input.removeAttribute("disabled")
+                        input.setAttribute("placeholder","Enter the name")
+            Eg-2 :
+                        var input1 = document.getElementById("inp1");
+                        document.body.style.backgroundColor = "black";
+                        function fun() {
+                            var len = input1.value;
+                            var leng = len.length
+                            if (leng >= 5) {
+                                input1.removeAttribute("disabled");
+                            }
+                            else {
+                                input1.removeAttribute("disabled",true);
+                                
+                            }
+                        }            

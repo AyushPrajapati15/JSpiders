@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+   
+   <!--  <bean id="referencevariable" class="FQCN of Object">
+   </bean>
+   -->
+   
+   <context:component-scan base-package="org.jsp"></context:component-scan>
+
+   <bean id="view" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+   <property name="prefix" value="/"></property>
+   <property name="suffix" value=".jsp"></property>
+   </bean>
+   
+   <bean id="userdatasource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+   <property name="url" value="jdbc:mysql://localhost:3306/teca61?"></property>
+   <property name="username" value="root"></property>
+   <property name="password" value="12345"></property>
+   <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"></property>
+   </bean>
+
+	<bean id="jdbctemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+	<constructor-arg name="dataSource" ref="userdatasource"></constructor-arg>
+	</bean>
+	
+	
+	<bean id="admindatasource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+   <property name="url" value="jdbc:mysql://localhost:3306/teca60?"></property>
+   <property name="username" value="root"></property>
+   <property name="password" value="12345"></property>
+   <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"></property>
+   </bean>
+	
+	<bean id="admintemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+	<constructor-arg name="dataSource" ref="admindatasource"></constructor-arg>
+	
+	</bean>
+
+
+
+
+
+
+
+
+
+</beans>

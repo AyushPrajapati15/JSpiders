@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./AssignOnInputOnChange.js" defer></script>
+
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+
+    <input type="range" min="0" max="255" value="0" id="red1" oninput="fun1()">
+    <input type="range" min="0" max="255" value="0" id="green1" oninput="fun1()">
+    <input type="range" min="0" max="255" value="0" id="blue1" oninput="fun1()">
+    <br><br>
+    <input type="range" min="0" max="255" value="0" id="red2" onchange="fun2()">
+    <input type="range" min="0" max="255" value="0" id="green2" onchange="fun2()">
+    <input type="range" min="0" max="255" value="0" id="blue2" onchange="fun2()">
+    
+</body>
+</html>

@@ -1,0 +1,1 @@
+document.write("<table border=1  style='border-collapse:collapse'> <tr><td>Name</td><td>Sam</td></tr><tr><td>lastName</td><td>Sung</td></tr></table>");
