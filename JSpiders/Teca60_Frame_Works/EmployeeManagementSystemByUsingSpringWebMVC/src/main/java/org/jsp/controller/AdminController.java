@@ -11,10 +11,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-<<<<<<< HEAD
-import org.springframework.web.bind.annotation.ResponseBody;
-=======
->>>>>>> ff913c96ca3ad915ce256dece5f79146527ce5cf
 
 @Controller
 public class AdminController {
@@ -36,73 +32,17 @@ public class AdminController {
 	{
 		Admin adminlogin =adminDao.adminLogin(email_id, password);
 		if (adminlogin!=null) {
-<<<<<<< HEAD
-			
-			return "redirect:/alldetails";
-			
-		}
-		else
-		{
-			model.addAttribute("error", "Invalid email or password");
-=======
 			List<UserInformation> allUserInformation=userDAO.getAllUserInformation();
 			model.addAttribute("alluserdetails",allUserInformation);
 			return "AllUserDetails";
 		}
 		else
 		{
->>>>>>> ff913c96ca3ad915ce256dece5f79146527ce5cf
 			return "redirect:/adminloginpage";
 		}
 		
 		
 		
 	}
-<<<<<<< HEAD
-	
-	@RequestMapping("/filter")
-	public String filter(String filtervalue,Model model)
-	{
-		List<UserInformation> userInformations=userDAO.gerUserDetailsBasedOnValue(filtervalue);
-		model.addAttribute("alluserdetails",userInformations);		
-		return "AllUserDetails";
-	}
-	 
-	
-	@RequestMapping("/update")
-	public void update() {
-
-	}
-	
-	@RequestMapping("/delete")
-//	@ResponseBody
-	public String delete(@RequestParam("email") String email) {
-//		System.out.println(email);
-		int res = userDAO.deleteUserByUsingEmailid(email);
-		if(res!=0)
-		{
-			return "redirect:/alldetails";
-		}
-		else {
-			return null;
-			
-		}
-	}
-	
-	
-	@RequestMapping("/alldetails")
-	public String allUserDetails(Model model) {
-		List<UserInformation> allUserInformation=userDAO.getAllUserInformation();
-		model.addAttribute("alluserdetails",allUserInformation);	
-		return "AllUserDetails";
-
-	}
-	
-	
-
 
 }
-=======
-
-}
->>>>>>> ff913c96ca3ad915ce256dece5f79146527ce5cf
