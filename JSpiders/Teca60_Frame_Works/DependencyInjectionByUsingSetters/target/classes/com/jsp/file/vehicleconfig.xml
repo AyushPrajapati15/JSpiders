@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context.xsd">
+            
+            <context:property-placeholder location="com/jsp/file/Vehicle.properties"/>
+            
+            <!-- it is not necessary to give the same name to name and value -->
+            <!-- SETTERS WAY -->
+           <bean class="com.jsp.model.Vehicle" name="Vehicle">
+           <property name="number" value="${number}"/>
+           <property name="name" value="${name}"/>
+           <property name="brand" value="${brand}"/>
+           <property name="color" value="${color}"/>
+           <property name="price" value="${price}"/>
+           <property name="Engine" ref="EngineD"></property>
+           </bean>
+           
+           
+           
+          <bean class="com.jsp.model.Engine" name="Engine">
+           <property name="cc" value="${cc}"/>
+           <property name="gas" value="${gas}"/>
+           <property name="noOfPiston" value="${piston}"/>
+           </bean>
+            
+           
+           <bean class="com.jsp.model.Engine" name="EngineD">
+           <property name="cc" value="${ccD}"></property>
+           <property name="gas" value="${gasD}"></property>
+           <property name="noOfPiston" value="${pistonD}"></property>
+           
+           </bean> 
+           
+            
+
+   
+
+
+</beans>

@@ -1,0 +1,50 @@
+6 Steps of JDBC:
+
+	1.Loading the Driver class.
+		-right click on project folder.
+		-select Build Path andConfigure Build Path.
+		-Select library
+		-add External JAR 
+		-Select the folder present in JDBC SOFTWARE:-(mysql-connector-j-8.1.0.jar)
+	2.Establishing the connection.
+	3.Creating the Platform.
+	4.Execution process
+
+	
+
+DAO
+miscellular
+Monolithic
+	
+	
+statement-it will compile every time and then execute
+prepare statement-it will compile only one time and execute mutiple times.
+getWriter-it is used to print the output on the default page.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+Alice Johnson
+Bob Smith
+Jack Anderson
+Scott Davis
+Jack Anderson
+Carol Wilson
+Dave Brown

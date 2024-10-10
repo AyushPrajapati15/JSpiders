@@ -27,7 +27,10 @@ public class EmployeeConfig {
 			return null;
 		}
 	}
+<<<<<<< HEAD
+=======
 
+>>>>>>> ff913c96ca3ad915ce256dece5f79146527ce5cf
 	@Bean(name = "user")
 	public Connection userBean() {
 		try {

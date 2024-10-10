@@ -1,0 +1,89 @@
+string programming practice questions
+
+Here are some string programming questions for practice, ranging from basic to advanced levels:
+
+Basic Level:-
+
+Reverse a String: Write a function that takes a string as input and returns the string reversed.    ✔
+Example: "hello" → "olleh"
+
+Check Palindrome: Write a function to check if a given string is a palindrome.      ✔
+Example: "racecar" → true, "hello" → false
+
+
+Count Vowels and Consonants: Write a function to count the number of vowels and consonants in a given string.   ✔
+Example: "hello" → Vowels: 2, Consonants: 3
+
+Find the First Non-Repeated Character: Write a function to find the first non-repeated character in a string.    ✔
+Example: "swiss" → 'w'
+
+Remove Duplicates: Write a function to remove duplicate characters from a string.✔
+Example: "programming" → "progamin"
+
+Intermediate Level:-
+
+Longest Substring Without Repeating Characters: Write a function to find the length of the longest substring without repeating characters.
+Example: "abcabcbb" → 3 (substring is "abc")
+
+Anagram Check: Write a function to check if two strings are anagrams of each other.
+Example: "listen" and "silent" → true
+
+String Permutations: Write a function to print all permutations of a given string.
+
+Example: "abc" → ["abc", "acb", "bac", "bca", "cab", "cba"]
+Find All Subsequences: Write a function to find all subsequences of a given string.
+
+Example: "abc" → ["", "a", "b", "c", "ab", "ac", "bc", "abc"]
+Longest Common Prefix: Write a function to find the longest common prefix string amongst an array of strings.
+
+Example: ["flower", "flow", "flight"] → "fl"
+Advanced Level
+Longest Palindromic Substring: Write a function to find the longest palindromic substring in a given string.
+
+Example: "babad" → "bab" or "aba"
+String Compression: Write a function to perform basic string compression using the counts of repeated characters.
+
+Example: "aabcccccaaa" → "a2b1c5a3"
+Edit Distance: Write a function to compute the minimum edit distance between two strings.
+
+Example: "kitten" and "sitting" → 3
+Group Anagrams: Write a function to group anagrams from a list of strings.
+
+Example: ["eat", "tea", "tan", "ate", "nat", "bat"] → [["eat", "tea", "ate"], ["tan", "nat"], ["bat"]]
+Count and Say: Write a function to generate the nth term of the count-and-say sequence.
+
+Example: 1 → "1", 2 → "11", 3 → "21", 4 → "1211", 5 → "111221"
+Solutions Outline
+Here are some hints and outlines for solutions:
+
+1. Reverse a String
+Solution: Use a loop or built-in methods to reverse the string.
+2. Check Palindrome
+Solution: Compare the string with its reversed version.
+3. Count Vowels and Consonants
+Solution: Loop through the string and count vowels and consonants.
+4. First Non-Repeated Character
+Solution: Use a hash map to count character occurrences and find the first with a count of 1.
+5. Remove Duplicates
+Solution: Use a hash set to store characters and build a new string.
+6. Longest Substring Without Repeating Characters
+Solution: Use a sliding window technique with two pointers.
+7. Anagram Check
+Solution: Sort both strings and compare them.
+8. String Permutations
+Solution: Use recursion to generate permutations.
+9. Find All Subsequences
+Solution: Use recursion to generate subsequences.
+10. Longest Common Prefix
+Solution: Compare characters at each position across all strings.
+11. Longest Palindromic Substring
+Solution: Use dynamic programming or expand around center technique.
+12. String Compression
+Solution: Use a loop to count consecutive characters and build the compressed string.
+13. Edit Distance
+Solution: Use dynamic programming to find the minimum edits.
+14. Group Anagrams
+Solution: Use a hash map with sorted strings as keys.
+15. Count and Say
+Solution: Build the sequence iteratively based on the previous term.
+These questions should give you a good mix of practice in string manipulation, algorithm design, and problem-solving skills.

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>FirstDynamicWebProject</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+	</welcome-file-list>
+
+
+	<servlet>
+		<servlet-name>empregistration</servlet-name>
+		<servlet-class>com.jsp.controller.EmployeeRegistration</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>empregistration</servlet-name>
+		<url-pattern>/registration</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>updatesalary</servlet-name>
+		<servlet-class>com.jsp.controller.UpdateSalary</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>updatesalary</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>empselection</servlet-name>
+		<servlet-class>com.jsp.controller.EmployeeSelection</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>empselection</servlet-name>
+		<url-pattern>/selection</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>empdeletion</servlet-name>
+		<servlet-class>com.jsp.controller.EmployeeDelete</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>empdeletion</servlet-name>
+		<url-pattern>/deletion</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+	<servlet-name>selectall</servlet-name>
+	<servlet-class>com.jsp.controller.EmployeeSelection</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>selectall</servlet-name>
+	<url-pattern>/selectall</url-pattern>
+	</servlet-mapping>
+
+
+
+
+</web-app>

@@ -18,11 +18,18 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 	private Connection connection;
 	private static final String insert = "insert into employee_details(emp_name, emp_sal, emp_deptNo, emp_mobile) values(?,?,?,?)";
 	private static final String select = "select * from employee_details where emp_id=?";
+<<<<<<< HEAD
+	@Override
+	public void insertEmployeeDetails() {
+		try {
+			
+=======
 
 	@Override
 	public void insertEmployeeDetails() {
 		try {
 
+>>>>>>> ff913c96ca3ad915ce256dece5f79146527ce5cf
 			PreparedStatement ps = connection.prepareStatement(insert);
 			ps.setString(1, "Jerry");
 			ps.setDouble(2, 65000);
@@ -43,7 +50,11 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 	@Override
 	public void selectEmployeeDetailsByUsingEmployeeId(int id) {
 		try {
+<<<<<<< HEAD
+			
+=======
 
+>>>>>>> ff913c96ca3ad915ce256dece5f79146527ce5cf
 			PreparedStatement ps = connection.prepareStatement(select);
 			ps.setInt(1, id);
 			ResultSet resultSet = ps.executeQuery();
