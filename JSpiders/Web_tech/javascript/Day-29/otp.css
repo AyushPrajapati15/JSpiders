@@ -1,0 +1,95 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(circle at top,coral,black);
+}
+#container,#otpcontainer{
+    width: 30vw;
+    height: 22vw;
+    background-color: black;
+    margin-top: 13%;
+    margin-left: 35%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    position: absolute;
+}
+
+#otp{
+    margin-top: 80px;
+}
+#generateotp,#submit{
+    cursor: pointer;
+}
+input{
+    width: 80%;
+    height: 35px;
+    margin-top: 5%;
+    margin-left: 10%;
+    border-radius: 10px;
+    border: none;
+    outline:none;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 1vw;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    background-color: teal;
+    
+}
+input::placeholder{
+    color: rgb(243, 55, 55);
+}
+#submit{
+    background-color: rgb(246, 119, 0);
+}
+#generateotp{
+    background-color: yellow;
+}
+
+#close{
+    font-size: 3vw;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    rotate: -45deg;
+    float: right;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+#close:hover{
+    rotate: 405deg;
+}
+#result{
+    width: 80%;
+    height: 35px;
+    margin-left: 20%;
+    border-radius: 10px;
+    border: none;
+    outline:none;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 1vw;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: red;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+#otpgen{
+    font-size: 3vw;
+    color: black;
+    letter-spacing: 2vw;
+    padding-top: 27%;
+    padding-left: 28%;
+}
+
+#otpcontainer{
+    background-color: yellow;
+    display: none;
+}
