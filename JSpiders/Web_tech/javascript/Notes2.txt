@@ -1,0 +1,494 @@
+value:
+    -It is a property which is used to collect the value from the input box from the user.
+   Eg:
+        var colour=document.getElementById("colour").value;
+
+Style:
+    -It is used to apply the css value from the js to the html elements
+   Eg:
+        document.body.style.color="red";
+
+Javascript Events:
+    -Events are the things that happens to html elements when the user interacts with the elements.
+    -In js we have event handlers like:
+
+        .onClick: - perform the event when the user clicks on html elements
+                Eg: <input type="button" onClick="func()" value="name>
+
+        .onKeyDown: - To perform the event when the user press down the keyboard keys we use onKeyDown event handlers
+        .onKeyUp: - To call the function when the user releases the keyboard key we use onKeyUp event handler.
+                Eg:            <body onkeyup="down()" onkeydown="jump()">
+                                    <marquee scrollamount="40" direction="right">
+                                        <img src="../../Asset/Image/ironman.gif" alt="">
+                                    </marquee>
+                                </body>
+        .onInput: - It is used to perform the event when the user enters input inside the input box 
+                Eg: <input id="colour" onInput="func()" placeholder="Enter the color">
+
+        .onMouseDown: - It is used to call the function when the user presses down the mouse key.
+        .onMouseUp: - It is used to call the function when the user releases the mouse button 
+                Eg:  <img onmousedown="visible()" onmouseup="invisible()" src="../../Asset/Image/ironman.gif">
+
+        .onMouseOver: - To call the function when the cursor is on the top of the element we use onMouseOver event handler.
+        .onMouseOut: - When the cursor is moved out of the element to call the sunction we use onMouseOut event handler.
+                Eg: <div  onmouseover="fun()" onmouseout="fun()"> </div>
+        
+        .onFocus: - It is used to call the function when the user focus into the input box by clicking on it.
+        .onBlur: - It is used to call the function when the input tag loose it's focus.
+                    Eg: <input  onfocus="focused()" onblur="blured()"> </input>
+        
+        .onChange: - It is used to call the function when the user performs changes in inp4 tag.
+                    Eg: 
+                        <h1 id="mess" ></h1>
+                        <select onchange="fun()">
+                            <option>Red</option>
+                            <option>Green</option>
+                            <option>Blue</option>
+                            <option>Orange</option>
+                        </select>
+                    
+        .addEventListner: - It is used to create the relationship between element and event.
+                           -For the addEventListner we have to pass two values they are event handler and function.
+                    Eg: 
+                        allinput[0].addEventListener("click",redcol)
+                        function redcol() {
+                            document.body.style.backgroundColor = "red";
+                        }
+
+.Create Element:
+    -Create element function is used to create the html elements in js.
+    -For the create element function we have to specify the element name as a value.
+    -After creating the element we have to append rhe element to the parent element by using append child.
+                    Eg: var divTag = document.createElement("div");
+                        document.body.appendChild(divTag);
+                        divTag.style.width = "400px";
+                        divTag.style.height = "400px";
+                        divTag.style.backgroundColor = "black";
+
+.Set and Remove Attribute:
+     .Set Attribute:
+        -St=et attribute function is used to insert the attribute inside the html elements.
+        -For the set attribute we have to pass two values they are: Attribute Name and Attribute Value.
+
+     .Remove attribute: 
+        -It is used to remove the attribute from html elements.
+        -For the remove attribute we have to pass one value which is attribute name.
+            Eg-1 :
+                        var input=document.querySelector("input")
+                        input.removeAttribute("disabled")
+                        input.setAttribute("placeholder","Enter the name")
+            Eg-2 :
+                        var input1 = document.getElementById("inp1");
+                        document.body.style.backgroundColor = "black";
+                        function fun() {
+                            var len = input1.value;
+                            var leng = len.length
+                            if (leng >= 5) {
+                                input1.removeAttribute("disabled");
+                            }
+                            else {
+                                input1.removeAttribute("disabled",true);
+                                
+                            }
+                        }            
+.Set time out:
+    -SetTimeOut() is used to call the function after given duration.
+    -For the SetTimeOut we have to pass 2 values they are :- Function name and Time duration in miliseconds
+  .Eg:
+                var num = 60;
+                function fun() {
+                    num--;
+                    document.querySelector("#timer").value = num;
+                    if (num != 0) {
+                        setTimeout(fun, 10)
+                    }
+                    else {
+                        num = 60;
+                    }
+                }
+.setInterval():
+    -It is used to call the function after given duration in a iteration manner.
+    -For the setInterval we have to pass 2 values they are :- function name and time out in miliseconds
+  .Eg:
+            var cir = document.querySelector("#container");
+            function fun1() {
+                cir.style.transform = "translate(93vw)";
+
+            }
+            setInterval(fun1, 100)
+
+.ClearInterval():
+    -To stop setInterval we use ClearInterval().
+  .Eg:
+        func fun3(){
+            ClearInterval(interval);
+            intervalId=null;
+        }
+
+
+Javascript Array:
+    -It is used to store multiple heterogeneous values.
+    -In js array elements will be having positive and negative index values.
+    -We can create a array by using literals, split, and array constructor.
+
+  .By using Literals:
+        -We can create a array by using square brackets[] 
+    .Eg:    var arr = ["ayush", "MS015", "Male", 85000, true];
+            console.log(arr);
+
+        -In js we can create the array then we can insert the value inside the array.
+    .Eg:
+            
+            var arr = [];
+            arr[0] = "Apple";
+            arr[2] = "Mango";
+            console.log(arr); 
+
+  .By using Split:
+        -It is a string method which is used to convert string into a array.
+    .Eg:
+            var arr = "Apple mango banana grapes";
+            console.log(arr.split(" "), typeof (arr))
+            console.log(arr.split(" ,"))
+
+  .By using array constructor:
+        -We can create a array by using array constructor, while creating the array we have to use new keyword.
+    .Eg:
+            var arr =new Array( "Apple mango banana grapes");
+            console.log(arr)
+
+
+Properties and Functions of Array:
+  .Join():
+        -It is used to convert an array into the string.
+    .Eg:            
+            var arr= ['Apple', 'mango', 'banana', 'grapes']
+            console.log(arr);
+            var str = arr.join("");
+            console.log(str);
+  
+  .ToString():
+        -It is also used to convert an array into a string.
+    .Eg:            
+            var str = arr.toString();
+            console.log(str);
+            var str1=str.replaceAll("," ," ")
+            console.log(str1);
+            var arrRev = arr.reverse();
+            console.log(arrRev);
+
+  .Reverse():
+        -It is used to reverse the elements of an array.
+    .Eg:
+            var arr = ['Apple', 'mango', 'banana', 'grapes']
+            var arrRev = arr.reverse();
+            console.log(arrRev);
+
+  .Pop():
+        -To remove the array element from the last we use pop().
+  .Push():
+        -It is used to insert the array elements from the last.
+    .Eg:
+            var arr = ['Apple', 'mango', 'banana', 'grapes']
+            arr.pop();
+            arr.push("white","black");
+            console.log(arr);
+
+  .Shift():
+        -It is used to remove the array element from the starting of an array.
+
+  .UnShift():
+        -It is used to insert the elements from the starting of an array.
+    
+    .Eg:
+            var arr = ['Apple', 'mango', 'banana', 'grapes']
+            arr.shift();
+            arr.unshift("white", "black");
+            console.log(arr);
+  
+  .Filter():
+        -It is used to fetch the array elements with respect to the condition.
+        -It is one of the higher order function for the filter we have to pass a call back function.
+
+    .Eg:
+            var arr=[22,23,55,43,67,2,3,7,6];
+            var arr1=arr.filter(fil)
+            function fill(arr){
+                return arr>18;
+            }
+
+  .Length:
+        -It is a property which is used to find the length of an array, by using the length we can iterate the array.
+    .Eg:
+        for(i=0;i<emp.length;i++){
+            console.log(arr[i])
+        }
+    
+  .Map():
+        -It is a higher order function which is used to modify the array elements based on the return expression.
+        -For the map method we must and should pass the call back function.
+    .Eg:                            
+            var arr = [1, 21, 33, 23, 4, 5, 5];
+            console.log(arr);            
+            var arr1=arr.map((arr) => {
+            return arr+2 ;
+            })
+            console.log(arr1);
+  
+  .Keys():
+        -It returns array iterator which contains the values as element index position.
+
+  .Values:
+        -Values method is used to create a terator of array elements.
+
+  .Entries():
+        -It is used to create a array iterator of key and value.
+    .Eg:
+            var arr = ["apple", "grapes", "pineapple", "mango", "watermelon", "red", "green", "blue", "orange"];
+            var arr1 = arr.keys();
+            var arr1 = arr.values();
+            var arr1 = arr.entries();
+            for (n of arr1) {
+                console.log(n);
+            console.log(arr[n]);
+            }
+
+  .Find():
+        -It is a higher order method which is used to fetch an element from an array block which satisfies the given condition.
+
+  .FindIndex():
+        -It is used to fetch the index position of element which satisfies the condition.
+    .Eg:                
+                var arr = ["apple", "grapes", "pineapple", "mango", "watermelon", "red", "green", "blue", "orange"];
+                var res=arr.find(arr => {
+                    return arr == "mango";
+                        return arr. length > 5;  //it will return the first occurance
+                    })
+                    console.log(res);
+
+                var res = arr.findIndex(arr => {
+                    return arr == "mango";
+                })
+                console.log(res);
+  .Every():
+        -It is a higher order method which is used to verify all the elements in the given array is satisfying the condition or not, if it is satisfying the condition 
+            it returns true or else false.
+    .Eg:
+                var arr = [2,4,6,8];
+                var res=arr.every(arr => {
+                    return arr % 2 == 0;
+                })
+                console.log(res);
+    
+  .Some():
+        -It is a higher order function which is used to verify atleast any one of the element satisfies the conditions or not.
+    .Eg:    
+                var arr = [2,4,6,8,1];
+                var res=arr.some(arr => {
+                    return arr % 2 != 0;
+                })
+                console.log(res);
+
+  .Sort():
+        -It is used to sort the array elements,if it is a array of numbers we have to pass callback function for the sort method.
+    .Eg-1:        
+                var arr = ["apple", "grapes", "pineapple", "mango", "watermelon", "red", "green", "blue", "orange"];
+                console.log(arr);
+                var arr1 = arr.sort();
+                console.log(arr1);//lexical sorting
+    .Eg-2:
+                
+                var arr = [1, 3, 2, 4, 6, 8, 23, 5, 555, 443, 76, 34, 8, 776, 456, 234, 543, 65, 12, 2];
+                console.log(arr.sort());
+                var arr1 = arr.sort((a, b) => {
+                    return a - b;       //ascending
+                    return b - a;       //descending
+                })
+                console.log(arr1);
+
+  .Fill():
+        -It is used to insert an array elements in a specified index position.
+    .Eg:
+            
+                var arr = [1, 3, 2, 4, 6, 8, 23, 5, 555, 443, 76, 34, 8, 776, 456, 234, 543, 65, 12, 2];
+                var arr1 = arr.fill("Ayush", 0,5);
+                console.log(arr1);
+
+  .Slice():
+        -It is used to create a new array from an existing array, for the slice method we have to pass 2 values 
+            ther are starting index and ending index value, the index value can be negative or positive.
+    .Eg:
+            
+                var arr = [1, 2, 5, 9, 51, 14, 27, 36, 221, 553, 101, 102]
+                var arr1=arr.slice(-14, 5);
+                console.log(arr1);
+                console.log(arr);
+
+  .Splice:
+        -It is used to remove the desired part of an element from the array.
+        -The splice() will affect the original array.
+    .Eg:        
+                var arr = [1, 2, 5, 9, 51, 14, 27, 36, 221, 553, 101, 102]
+                var arr1 = arr.splice(0, 5);
+                console.log(arr1);
+                console.log(arr);
+        
+  .Flat:
+        -It is used to reduce the depth of an array.
+    .Eg:
+                var arr = [1, 2, 3, [4, 5, [8, 5, 2, [7, 5, [8, 3, 1, [7, 2, 0, 1, [6, 5]]]]]]];
+                var arr1=arr.flat()
+                var arr2=arr.flat(Infinity)
+                console.log(arr1);
+                console.log(arr2);
+
+Object:
+    -In js an object as a collection of key and value pair.
+    -The key is always string and the value can be any Javascript datatype.
+    -In oject we have two types they are:
+            .User defined object
+            .Pre defined object
+
+  Pre Defined Object:
+        -Pre defined objects are already designed and developed by js developers such as Math,document,console,Date etc...
+
+      Math:
+            -Math object is used to perform mathematical operation on Javascript variables.
+            -In the math object we have functions and properties like PI,cos,pow,min,max,trunc,floor,round,random, etc...
+         Eg:
+            console.log(Math);
+            console.log(Math.PI);
+            console.log(Math.cos(45));       
+
+      Date:               29
+            -It is used to get the current date and time.
+            -In the date object we can access the Functions like getHours,getMinutes,getSeconds,getDate,getMonth,getFullYear,getDay etc...
+         Eg:
+                var date=new Date();
+                var hh=date.getHours();
+                var mm=date.getMinutes();
+                var ss=date.getSeconds();
+                var dd=date.getDate();
+                var mo=date.getMonth();
+
+  User defined objects:
+        -We can create the objects by using
+                    .Literals
+                    .Object constructors
+                    .function constructor
+      Literals:
+            -In the object by using literals we use {} flower bracket, inside the bracket we will be having key and value pair which must be separated by using "," .
+            -The object properties can be accessed in two ways they are :
+                    .By using '.' dot notation
+                    .By using '[]' array notation
+         Eg: 
+                var objStudent = {
+                        sFirstName: "Alice",
+                        sLastName: "Doe",
+                        sClass: "10th std",
+                        sGrade: "A",
+                        sFullName: function () {
+                            return this.sFirstName + " " + this.sLastName;
+                        },
+                        sFull: ()=> {
+                            return this.sFirstName + " " + this.sLastName;
+                        },
+                        15:"This is a number"
+                }
+                console.log(objStudent);
+                console.log(objStudent.sClass);
+                console.log(objStudent.sFullName());
+                console.log(objStudent.sFull());
+                console.log(objStudent[15]);
+                console.log(objStudent["15"]);
+
+      Object constructor:
+            -We can create a object by using object constructor, whenever we create the object by using object constructor it is mandatory to use new keyword.
+            -After creating the object we can insert properties inside the object which can be accessed by using '.' dot notation and '[]' array notation.
+         Eg:                
+                var eObj = new Object();
+                eObj.ename = "Alice";
+                eObj.elname = "Doe";
+                eObj.esal = "8";
+                eObj.eEmail = "alice@gmail.com";
+                eObj.fullName = function () {
+                    return this.ename + " " + this.elname;
+                }
+                console.log(eObj);
+                console.log(eObj.ename);
+
+      function constructor:
+            -Objects can be created by using function constructor and while creating the object we have to use new keyword.
+         Eg:                
+                function EmpObj(fName, lName, eSal, eGen, eEmail, ePhno) {
+                    this.eFirstName = fName;
+                    this.eLastName = lName;
+                    this.eSal = eSal;
+                    this.eGender = eGen;
+                    this.eEmail = eEmail;
+                    this.ePhone = ePhno;
+                    this.eFullName = function () {
+                        return this.eFirstName + " " + this.eLastName;
+                    }
+                }
+                var alice = new EmpObj("Alice", "Doe", 45000, "Male", "alice@gmail.com", 9856321470);
+                console.log(alice);
+                console.log(alice.eFirstName);
+                console.log(alice["eEmail"]);
+                var bob = new EmpObj("Bob", "Doe", 45000, "Male", "bob@gmail.com", 9865421470);
+                console.log(bob);
+                console.log(bob.eFullName());
+
+  Javascript object methods:
+
+        .Entries():
+                -It gives array of key and value pair.
+        
+        .Keys():
+                -It is used to have array of keys.
+
+        .Values():
+                -Values method is used to have collection of values in the format of array.
+         Eg:
+                var obj = {
+                    userName: "Alice",
+                    userPassword: "alice@123",
+                    userGender: "Male",
+                    userPhone: 7894561230
+                }
+                console.log(obj);
+                var arr=Object.entries(obj);
+                console.log(arr);
+                var arr1 = Object.keys(obj);
+                console.log(arr1);
+                var arr2 = Object.values(obj);
+                console.log(arr2);
+                
+        .Delete:
+                -Delete property is used to delete the properties from object.
+          Eg:
+                var obj = {
+                    userName: "Alice",
+                    userPassword: "alice@123",
+                }
+                delete obj.userName;
+                console.log(obj);
+
+        .Freeze():
+                -Freeze() method is used to freeze the object, if we freeze the object we cannot repace or delete the properties of the object.
+          Eg:
+                                    
+                Object.freeze(obj)
+                delete obj.userName;
+                console.log(obj);
+
+        .Seal():
+                -In seal() method it will seal the object where we cannot delete the properties but we can edit the properties.
+          Eg:   
+                    Object.seal(obj)
+                    delete obj.userGender;
+                    console.log(obj);
+                    obj.userGender="maale"
+                    console.log(obj);
+
+
